@@ -1,5 +1,5 @@
 import React from 'react'
-import Breadcrumbs from './breadcrumbs'
+import Breadcrumbs from '/Breadcrumbs'
 
 export default function Department() {
   return (
