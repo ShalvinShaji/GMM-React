@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <div className="container-fluid" id="footer">
+      <div id="footer">
         <div className="footer-top">
           <div className="row footer-content d-flex justify-content-center ">
             <div className="col-lg-3 col-md-6 footer-contact d-flex flex-column flex-lg-row">
