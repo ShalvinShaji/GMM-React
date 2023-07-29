@@ -5,7 +5,7 @@ export default function Department() {
   return (
     <>
     <Bcrumbs breadcrumbspage="Departments"/>
-      <section id="departments" className="departments p-0 m-0">
+      <section id="departments" className="departments">
         <div className="container">
           <div className="section-title">
             <h2>Our Departments</h2>
