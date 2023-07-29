@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react'
 import { Link } from "react-router-dom";
 
-export default function Breadcrumbs(props) {
+
+export default function Bcrumbs(props) {
   return (
     <>
       <div className="breadcrumbs d-flex justify-content-between align-items-center">
@@ -13,5 +14,5 @@ export default function Breadcrumbs(props) {
         </ol>
       </div>
     </>
-  );
+  )
 }
