@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-xl">
+    <nav className="navbar navbar-expand-xl m-0 p-0"  >
       {/* <p className="d-lg-none m-0 p-0" style={{ fontSize: "6px !important" }}>
         <i>" We take care of your health for a better life."</i>
       </p> */}

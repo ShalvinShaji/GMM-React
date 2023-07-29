@@ -31,7 +31,7 @@ const Header = () => {
                 </Link>
                 {/* End Header Logo */}
               </div>
-              <div className="col-3 col-lg-5 col-xl-8 m-0 p-0 row align-items-center justify-content-xl-end">
+              <div className="col-2 col-lg-5 col-xl-8 m-0 p-0 row align-items-center justify-content-xl-end">
                   {/* Start Navbar */}
                   <Navbar />
                   {/* End Navbar */}
