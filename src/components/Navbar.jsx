@@ -8,11 +8,13 @@ const Navbar = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
   };
 
+  const handleMobileLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <nav className="navbar navbar-expand-xl m-0 p-0"  >
-      {/* <p className="d-lg-none m-0 p-0" style={{ fontSize: "6px !important" }}>
-        <i>" We take care of your health for a better life."</i>
-      </p> */}
+    <nav className="navbar navbar-expand-xl m-0 p-0">
+      {/* Mobile Menu Toggler */}
       <button
         className={`navbar-toggler mobile-menu-btn ${isMobileMenuOpen ? "active" : ""}`}
         type="button"
@@ -23,13 +25,17 @@ const Navbar = () => {
         <span className="toggler-icon"></span>
         <span className="toggler-icon"></span>
       </button>
+
+      {/* Mobile Menu */}
       <div
         className={`collapse navbar-collapse sub-menu-bar ${isMobileMenuOpen ? "show" : ""}`}
         id="navbarSupportedContent"
       >
         <ul id="nav" className="navbar-nav">
-          <li className="nav-item ">
-            <Link to="/">Home</Link>
+          <li className="nav-item">
+            <Link to="/" onClick={handleMobileLinkClick}>
+              Home
+            </Link>
           </li>
           <li className="nav-item">
             <a
@@ -39,38 +45,57 @@ const Navbar = () => {
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              onClick={handleMobileLinkClick}
             >
               About
             </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li className="nav-item">
-                <Link to="/Rev-George-Mathen" className="dropdown-item">Rev. George Mathen</Link>
+                <Link to="/Rev-George-Mathen" className="dropdown-item" onClick={handleMobileLinkClick}>
+                  Rev. George Mathen
+                </Link>
               </li>
               <li className="nav-item">
-                <Link to="/Vision-Mission" className="dropdown-item">Vision & Mission</Link>
+                <Link to="/Vision-Mission" className="dropdown-item" onClick={handleMobileLinkClick}>
+                  Vision & Mission
+                </Link>
               </li>
               <li className="nav-item">
-                <Link to="/Governing-Board" className="dropdown-item">Governing Board</Link>
+                <Link to="/Governing-Board" className="dropdown-item" onClick={handleMobileLinkClick}>
+                  Governing Board
+                </Link>
               </li>
             </ul>
           </li>
           <li className="nav-item">
-            <Link to="/Departments">Departments</Link>
+            <Link to="/Departments" onClick={handleMobileLinkClick}>
+              Departments
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Facilities">Facilities</Link>
+            <Link to="/Facilities" onClick={handleMobileLinkClick}>
+              Facilities
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Doctors">Doctors</Link>
+            <Link to="/Doctors" onClick={handleMobileLinkClick}>
+              Doctors
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Careers">Careers</Link>
+            <Link to="/Careers" onClick={handleMobileLinkClick}>
+              Careers
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Gallery">Gallery</Link>
+            <Link to="/Gallery" onClick={handleMobileLinkClick}>
+              Gallery
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Contact">Contact</Link>
+            <Link to="/Contact" onClick={handleMobileLinkClick}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

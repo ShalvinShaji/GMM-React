@@ -153,7 +153,7 @@ export default function Footer() {
       </div>
       <div className="footer-credits d-flex flex-column flex-lg-row">
         <div className="col-lg-6 copyright d-flex justify-content-center"><small>&copy; Copyright <strong><span>gmmhospital</span></strong>. All Rights Reserved</small></div>
-        <div className="col-lg-6 credits d-flex justify-content-center"><small> Designed by <a href="#">AZAIC TECH LLP</a> </small></div>
+        <div className="col-lg-6 credits d-flex justify-content-center"><small> Designed by <a className="credit-azaic" href="#">AZAIC TECH LLP</a> </small></div>
       </div>
     </>
   );
