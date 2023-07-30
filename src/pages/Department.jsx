@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Bcrumbs from "./Bcrumbs";
+import Bcrumbs from "../components/Bcrumbs";
 import '../css/Departments.css'
 
 export default function Department() {

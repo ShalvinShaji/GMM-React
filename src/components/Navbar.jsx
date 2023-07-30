@@ -44,10 +44,10 @@ const Navbar = () => {
             </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li className="nav-item">
-                <Link to="/RevGeorgeMathen" className="dropdown-item">Rev. George Mathen</Link>
+                <Link to="/Rev-George-Mathen" className="dropdown-item">Rev. George Mathen</Link>
               </li>
               <li className="nav-item">
-                <Link to="/VisionMission" className="dropdown-item">Vision & Mission</Link>
+                <Link to="/Vision-Mission" className="dropdown-item">Vision & Mission</Link>
               </li>
               <li className="nav-item">
                 <Link to="/Governing-Board" className="dropdown-item">Governing Board</Link>

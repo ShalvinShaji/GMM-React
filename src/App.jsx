@@ -3,15 +3,17 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import Home from "./components/Home";
-import Department from "./components/Department";
-import Facilities from "./components/Facilities";
-import Careers from "./components/Careers";
-import Contact from "./components/Contact";
-import Doctors from "./components/Doctors";
-import Appointment from "./components/Appointment";
-import Gallery from "./Gallery";
-import Governingboard from "./components/Governingboard";
+import Home from "./pages/Home";
+import Department from "./pages/Department";
+import Facilities from "./pages/Facilities";
+import Careers from "./pages/Careers";
+import Contact from "./pages/Contact";
+import Doctors from "./pages/Doctors";
+import Appointment from "./pages/Appointment";
+import Gallery from "./pages/Gallery";
+import Governingboard from "./pages/Governingboard";
+import Revgeorgemathen from "./pages/Revgeorgemathen";
+import Visionmission from "./pages/Visionmission";
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
         <Route path="/Appointment" element={<Appointment/>} />
         <Route path="/Gallery" element={<Gallery/>} />
         <Route path="/Governing-Board" element={<Governingboard/>} />
+        <Route path="/Rev-George-Mathen" element={<Revgeorgemathen/>} />
+        <Route path="/Vision-Mission" element={<Visionmission />} />
       </Routes>
     </>
   );
