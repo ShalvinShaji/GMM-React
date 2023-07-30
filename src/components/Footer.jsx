@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="footer d-flex align-items-center">
         <div className="container ">
           <div className="row">
-            <div className="col-lg-3 col-md-6 footer-contact d-flex flex-column align-items-lg-start ">
+            <div className="col-lg-3 col-md-6 mb-2 mb-lg-0 footer-contact d-flex flex-column align-items-lg-start ">
               {/* <div className="">
                 <img
                   src="https://heronavbar.netlify.app/assets/img/logo.jpg"
@@ -35,7 +35,7 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 footer-links d-flex flex-column align-items-lg-center">
+            <div className="col-lg-3 col-md-6 mb-2 mb-lg-0 footer-links d-flex flex-column align-items-lg-center">
               <ul>
                 <h4 className="text-uppercase ">Useful Links</h4>
                 <li>
@@ -70,7 +70,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-6 footer-links d-flex flex-column align-items-lg-center">
+            <div className="col-lg-3 col-md-6 mb-2 mb-lg-0 footer-links d-flex flex-column align-items-lg-center">
               <ul>
               <h4 className="text-uppercase ">Our Departments</h4>
                 <li>
@@ -125,7 +125,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-3 footer-newsletter d-flex flex-column align-items-lg-start ">
+            <div className="col-lg-3 col-md-3 mb-2 mb-lg-0 footer-newsletter d-flex flex-column align-items-lg-start ">
               <h4 className="text-uppercase mb-2">Follow us on:</h4>
               <div className="social-links ">
                 <a
