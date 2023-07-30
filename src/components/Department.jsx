@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Bcrumbs from "./Bcrumbs";
+import '../css/Departments.css'
 
 export default function Department() {
+  const [activeTab, setActiveTab] = useState("tab-1"); // Default to the first tab (you can set any default tab)
+
+  useEffect(() => {
+    // Get the selected department from localStorage
+    const selectedDepartment = localStorage.getItem("selectedDepartment");
+
+    if (selectedDepartment) {
+      // Handle the selected department and set the active tab
+      handleTabSwitch(selectedDepartment);
+    }
+  }, []);
+
+  function handleTabSwitch(tabId) {
+    // Set the active tab based on the selected department
+    setActiveTab(tabId);
+    localStorage.removeItem("selectedDepartment")
+
+  }
+
   return (
     <>
-    <Bcrumbs breadcrumbspage="Departments"/>
+      <Bcrumbs breadcrumbspage="Departments" />
       <section id="departments" className="departments">
         <div className="container">
           <div className="section-title">
@@ -19,80 +39,100 @@ export default function Department() {
                 </li>
                 <li className="nav-item">
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-1" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-1"
-                    id="GeneralMedicine"
+                    onClick={() => handleTabSwitch("tab-1")}
                   >
-                    <p>General Medicine </p>
+                    <p>General Medicine</p>
                   </a>
                 </li>
                 <li className="nav-item mt-2">
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-2" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-2"
-                    id="Cardiology"
+                    onClick={() => handleTabSwitch("tab-2")}
                   >
-                    <p>Cardiology </p>
+                    <p>Cardiology</p>
                   </a>
                 </li>
                 <li className="nav-item mt-2">
+                 
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-3" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-3"
-                    id="Pediatrics"
+                    onClick={() => handleTabSwitch("tab-3")}
                   >
                     <p>Pediatrics</p>
                   </a>
                 </li>
                 <li className="nav-item mt-2">
+                  
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-4" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-4"
-                    id="Orthopedics"
+                    onClick={() => handleTabSwitch("tab-4")}
                   >
                     <p>Orthopedics</p>
                   </a>
                 </li>
                 <li className="nav-item mt-2">
+                  
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-5" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-5"
-                    id="Nephrology"
+                    onClick={() => handleTabSwitch("tab-5")}
                   >
                     <p>Nephrology</p>
                   </a>
                 </li>
                 <li className="nav-item mt-2">
+                 
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-6" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-6"
-                    id="Ent"
+                    onClick={() => handleTabSwitch("tab-6")}
                   >
                     <p>ENT</p>
                   </a>
                 </li>
                 <li className="nav-item mt-2">
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-7" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-7"
-                    id="Emergency-Medicine"
+                    onClick={() => handleTabSwitch("tab-7")}
                   >
                     <p>Emergency Medicine</p>
                   </a>
                 </li>
                 <li className="nav-item mt-2">
                   <a
-                    className="nav-link"
+                    className={`nav-link ${
+                      activeTab === "tab-8" ? "active" : ""
+                    }`}
                     data-bs-toggle="tab"
                     href="#tab-8"
-                    id="Homecare-Palliativecare"
+                    onClick={() => handleTabSwitch("tab-8")}
                   >
                     <p>Home care service & Palliative Care</p>
                   </a>
@@ -101,7 +141,7 @@ export default function Department() {
             </div>
             <div className="col-lg-9">
               <div className="tab-content">
-                <div className="tab-pane" id="tab-1">
+                <div className={`tab-pane ${activeTab === 'tab-1' ? 'active show' : ''}`} id="tab-1">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/general-medicine-banner.jpg"
@@ -173,7 +213,7 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane  show" id="tab-2">
+                <div className={`tab-pane ${activeTab === 'tab-2' ? 'active show' : ''}`} id="tab-2">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/cardiology-banner.jpeg.jpg"
@@ -213,7 +253,7 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane  show" id="tab-3">
+                <div className={`tab-pane ${activeTab === 'tab-3' ? 'active show' : ''}`} id="tab-3">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/pediatrics-banner.jpg"
@@ -257,7 +297,7 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane  show" id="tab-4">
+                <div className={`tab-pane ${activeTab === 'tab-4' ? 'active show' : ''}`} id="tab-4">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/orthopedic-banner.jpg"
@@ -296,7 +336,7 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane  show" id="tab-5">
+                <div className={`tab-pane ${activeTab === 'tab-5' ? 'active show' : ''}`} id="tab-5">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/nephrology-banner.jpg"
@@ -366,7 +406,7 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane  show" id="tab-6">
+                <div className={`tab-pane ${activeTab === 'tab-6' ? 'active show' : ''}`} id="tab-6">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/ent-banner.jpg"
@@ -412,7 +452,7 @@ export default function Department() {
                   </div>
                 </div>
 
-                <div className="tab-pane  show" id="tab-7">
+                <div className={`tab-pane ${activeTab === 'tab-7' ? 'active show' : ''}`} id="tab-7">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/emergency-medicine-banner.png"
@@ -476,7 +516,7 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane  show" id="tab-8">
+                <div className={`tab-pane ${activeTab === 'tab-8' ? 'active show' : ''}`} id="tab-8">
                   <div className="department-img">
                     <img
                       src="assets/img/departments/palliative-banner.jpg"

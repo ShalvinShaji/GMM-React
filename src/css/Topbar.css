@@ -1,0 +1,35 @@
+/*======================================
+	 Top Bar CSS
+========================================*/
+.topbar {
+    height: 40px;
+  }
+  
+  .topbar .hospital-contact span {
+    font-size: var(--small-font-size);
+  }
+  .topbar .hospital-contact i {
+    margin-right: var(--mb-1);
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+  }
+  .topbar .hospital-contact i:hover {
+    background-color: #fff;
+    color: crimson;
+  }
+  .topbar .hospital-social i {
+    margin-right: var(--mb-2);
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+  }
+  .topbar .hospital-social i:hover {
+    background-color: #fff;
+    color: crimson;
+  }
+  

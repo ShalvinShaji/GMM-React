@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import Topbar from "./Topbar";
-
+import '../css/Header.css'
 const Header = () => {
   return (
     <>
