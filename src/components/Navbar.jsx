@@ -50,27 +50,27 @@ const Navbar = () => {
                 <Link to="/VisionMission" className="dropdown-item">Vision & Mission</Link>
               </li>
               <li className="nav-item">
-                <Link to="/GoverningBoard" className="dropdown-item">Governing Board</Link>
+                <Link to="/Governing-Board" className="dropdown-item">Governing Board</Link>
               </li>
             </ul>
           </li>
           <li className="nav-item">
-            <Link to="/departments">Departments</Link>
+            <Link to="/Departments">Departments</Link>
           </li>
           <li className="nav-item">
-            <Link to="/facilities">Facilities</Link>
+            <Link to="/Facilities">Facilities</Link>
           </li>
           <li className="nav-item">
-            <Link to="/doctors">Doctors</Link>
+            <Link to="/Doctors">Doctors</Link>
           </li>
           <li className="nav-item">
-            <Link to="/careers">Careers</Link>
+            <Link to="/Careers">Careers</Link>
           </li>
           <li className="nav-item">
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/Gallery">Gallery</Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact">Contact</Link>
+            <Link to="/Contact">Contact</Link>
           </li>
         </ul>
       </div>

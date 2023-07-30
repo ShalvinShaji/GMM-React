@@ -46,19 +46,19 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="bx bx-chevrons-right"></i>
-                  <Link to="/facilities" className="text-uppercase">
+                  <Link to="/Facilities" className="text-uppercase">
                     facilities
                   </Link>
                 </li>
                 <li>
                   <i className="bx bx-chevrons-right"></i>
-                  <Link to="/appointment" className="text-uppercase">
+                  <Link to="/Appointment" className="text-uppercase">
                     Appointment
                   </Link>
                 </li>
                 <li>
                   <i className="bx bx-chevrons-right"></i>
-                  <Link to="/contact" className="text-uppercase">
+                  <Link to="/Contact" className="text-uppercase">
                     Contact
                   </Link>
                 </li>
@@ -76,7 +76,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/departments"
+                    to="/Departments"
                     onClick={() => handleDepartmentClick("tab-1")}
                     className="text-uppercase"
                   >
@@ -86,7 +86,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/departments"
+                    to="/Departments"
                     onClick={() => handleDepartmentClick("tab-2")}
                     className="text-uppercase"
                   >
@@ -96,7 +96,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/departments"
+                    to="/Departments"
                     onClick={() => handleDepartmentClick("tab-4")}
                     className="text-uppercase"
                   >
@@ -106,7 +106,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/departments"
+                    to="/Departments"
                     onClick={() => handleDepartmentClick("tab-3")}
                     className="text-uppercase"
                   >
@@ -116,7 +116,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/departments"
+                    to="/Departments"
                     onClick={() => handleDepartmentClick("tab-5")}
                     className="text-uppercase"
                   >
