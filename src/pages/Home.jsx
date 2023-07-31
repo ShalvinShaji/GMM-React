@@ -4,12 +4,16 @@ import { fetchProducts } from '../js/store';
 import "../css/Home.css";
 
 export default function Home() {
+  
   const products = useSelector((state) => state.products.data);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchProducts());
-  }, [dispatch]);
+    // Check if the products data is empty before fetching
+    if (products.length === 0) {
+      dispatch(fetchProducts());
+    }
+  }, [dispatch, products]);
 
 
   return (

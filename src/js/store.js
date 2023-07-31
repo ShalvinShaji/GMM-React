@@ -8,6 +8,7 @@ const productsSlice = createSlice({
   reducers: {
     fetchSuccess: (state, action) => {
       state.data = action.payload;
+      console.log("fetched")
     },
   },
 });
