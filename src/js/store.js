@@ -16,12 +16,12 @@ const productsSlice = createSlice({
 export const { fetchSuccess } = productsSlice.actions;
 
 export const fetchProducts = () => async (dispatch) => {
-  try {
-    const response = await axios.get('https://64c6affb0a25021fde91e1bf.mockapi.io/gmm/products');
-    dispatch(fetchSuccess(response.data));
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
+  // try {
+  //   const response = await axios.get('https://64c6affb0a25021fde91e1bf.mockapi.io/gmm/products');
+  //   dispatch(fetchSuccess(response.data));
+  // } catch (error) {
+  //   console.error('Error fetching data:', error);
+  // }
 };
 
 const store = configureStore({

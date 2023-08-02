@@ -22,13 +22,9 @@ export default function Department() {
     setActiveTab(tabId);
   }
 
-
   function clearLocal(){
     localStorage.removeItem("selectedDepartment");
   }
-
-  
-
 
   return (
     <>
