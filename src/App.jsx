@@ -18,6 +18,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Scrolltop from "./components/Scrolltop";
 import Chatbot from "./components/Chatbot";
+import Backtotop from "./components/Backtotop";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/Vision-Mission" element={<Visionmission />} />
       </Routes>
       <Chatbot/>
+      <Backtotop/>
       <Footer />
     </>
   );
