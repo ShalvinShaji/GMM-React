@@ -3,6 +3,7 @@ import Bcrumbs from "../components/Bcrumbs";
 import '../css/Departments.css'
 
 export default function Department() {
+  
   const [activeTab, setActiveTab] = useState("tab-1"); // Default to the first tab (you can set any default tab)
 
   useEffect(() => {
@@ -12,15 +13,22 @@ export default function Department() {
     if (selectedDepartment) {
       // Handle the selected department and set the active tab
       handleTabSwitch(selectedDepartment);
+      clearLocal();
     }
   }, []);
 
   function handleTabSwitch(tabId) {
     // Set the active tab based on the selected department
     setActiveTab(tabId);
-    localStorage.removeItem("selectedDepartment")
-
   }
+
+
+  function clearLocal(){
+    localStorage.removeItem("selectedDepartment");
+  }
+
+  
+
 
   return (
     <>

@@ -5,6 +5,9 @@ import "../css/Footer.css";
 export default function Footer() {
   const handleDepartmentClick = (department) => {
     localStorage.setItem("selectedDepartment", department);
+    if (location.pathname === "/Departments") {
+      handleTabSwitch(department); // Set the active tab directly if on department page
+    }
   };
 
   
