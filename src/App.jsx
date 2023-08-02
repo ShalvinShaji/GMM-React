@@ -17,6 +17,7 @@ import Visionmission from "./pages/Visionmission";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Scrolltop from "./components/Scrolltop";
+import Chatbot from "./components/Chatbot";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/Rev-George-Mathen" element={<Revgeorgemathen />} />
         <Route path="/Vision-Mission" element={<Visionmission />} />
       </Routes>
+      <Chatbot/>
       <Footer />
     </>
   );
