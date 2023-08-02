@@ -6,6 +6,8 @@ export default function Footer() {
   const handleDepartmentClick = (department) => {
     localStorage.setItem("selectedDepartment", department);
   };
+
+  
   return (
     <>
       <div className="footer d-flex align-items-center">
