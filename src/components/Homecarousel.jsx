@@ -1,31 +1,43 @@
 import React, { useEffect } from "react";
-import '../css/Homecarousel.css'
+import "../css/Homecarousel.css";
 
 export default function Homecarousel() {
-  
-  return(
+  return (
     <>
       <div
-        id="carouselExampleInterval"
+        id="carouselExampleAutoplaying"
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
-        data-bs-touch="true"
+        data-bs-pause="none"
+
       >
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="2000">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" className="d-block w-100" alt="..." />
+            <img
+              src="https://images.unsplash.com/photo-1690743300187-51d68146adf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              className="d-block w-100"
+              alt="..."
+            />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" className="d-block w-100" alt="..." />
+            <img
+              src="https://images.unsplash.com/photo-1690460814053-5906ac3e90cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+              className="d-block w-100"
+              alt="..."
+            />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" className="d-block w-100" alt="..." />
+            <img
+              src="https://images.unsplash.com/photo-1690394472903-23ce57cb5953?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUzfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+              className="d-block w-100"
+              alt="..."
+            />
           </div>
         </div>
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
         >
           <span
@@ -37,7 +49,7 @@ export default function Homecarousel() {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
           <span
