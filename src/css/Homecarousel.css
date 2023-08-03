@@ -1,8 +1,7 @@
-/* Show carousel control buttons on mobile devices */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .carousel-control-prev,
     .carousel-control-next {
       display: block !important;
     }
   }
-  
+   */
