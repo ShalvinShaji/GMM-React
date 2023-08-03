@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../css/Homecarousel.css'
 
 export default function Homecarousel() {
-  return (
+  
+  return(
     <>
       <div
         id="carouselExampleInterval"
