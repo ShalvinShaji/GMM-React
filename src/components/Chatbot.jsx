@@ -206,7 +206,9 @@ const Chatbot = () => {
   // Function to display the welcome message
   const displayWelcomeMessage = () => {
     let answer = "Hi, I'm Dr. Bobo. How can I help you?";
-    createBotResponseElement(answer);
+    setTimeout(() => {
+      createBotResponseElement(answer);
+    }, 3000);
 
     // Set the flag variable to true
     welcomeMessageDisplayed = true;
@@ -218,7 +220,7 @@ const Chatbot = () => {
       displayWelcomeMessage();
       setTimeout(() => {
         getWelcomeUserClickButtons();
-      }, 1000);
+      }, 3200);
     }
   }, []);
 
