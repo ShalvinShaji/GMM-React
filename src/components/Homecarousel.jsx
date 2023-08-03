@@ -8,7 +8,7 @@ export default function Homecarousel() {
         id="carouselExampleAutoplaying"
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
-        data-bs-pause="none"
+        data-bs-pause="false"
 
       >
         <div className="carousel-inner">
