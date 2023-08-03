@@ -1,7 +1,41 @@
-/* @media (max-width: 768px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-      display: block !important;
-    }
+/* Homecarousel.css */
+/* Set the carousel height to fill the remaining viewport height for larger screens */
+.carousel {
+  height: calc(100vh - 100px);
+}
+
+/* Adjust image dimensions to cover the full carousel area for larger screens */
+.carousel-inner img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 500px) {
+  /* Reduce the carousel height for smaller screens */
+  .carousel {
+    /* margin-top: 20px; */
+    height: 220px !important; 
   }
-   */
+
+  /* Adjust image dimensions to cover the full carousel area for smaller screens */
+  .carousel-inner img {
+    height: 200px !important;
+    width: 100%;
+  }
+}
+@media ((min-width:501px) and (max-width: 768px)) {
+  /* Reduce the carousel height for smaller screens */
+  .carousel {
+    /* margin-top: 20px; */
+    height: 370px !important; 
+  }
+
+  /* Adjust image dimensions to cover the full carousel area for smaller screens */
+  .carousel-inner img {
+    height: 350px !important;
+    width: 100%;
+  }
+}
+

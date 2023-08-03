@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchProducts } from '../js/store';
 import "../css/Home.css";
 import Homecarousel from '../components/Homecarousel';
+import Topbar from '../components/Topbar';
 
 export default function Home() {
   
@@ -35,6 +36,7 @@ export default function Home() {
         </div>
       </div> */}
       <Homecarousel/>
+      <Topbar/>
     </>
   );
 }
