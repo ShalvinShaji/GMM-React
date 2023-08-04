@@ -19,7 +19,7 @@
 
 /* Adjust image dimensions to cover the full carousel area for larger screens */
 .carousel-inner img {
-  object-fit: cover;
+  object-fit: fill !important;
   height: 100%;
   width: 100%;
   box-shadow: none !important;
