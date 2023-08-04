@@ -1,16 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/Homecarousel.css";
+import { getPhotosByQuery } from "../api/fetch";
 
 export default function Homecarousel() {
-  useEffect(() => {
-    // Initialize the carousel when the component mounts
-    const carousel = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying'));
+  const [photos, setPhotos] = useState([]);
 
-    // Dispose the carousel when the component unmounts
-    return () => {
-      carousel.dispose();
-    };
-  }, []);
+  useEffect(() => {
+    if (photos.length === 0) {
+      const searchQuery = 'festival';
+      getPhotosByQuery(searchQuery)
+        .then((data) => {
+          console.log('Fetched data:', data);
+          setPhotos(data.results); // Assuming the response from Unsplash is an array of results
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  }, [photos]);
+
   return (
     <>
       <div
@@ -18,31 +26,21 @@ export default function Homecarousel() {
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
         data-bs-pause="false"
-        
-
       >
         <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="6000">
-            <img
-              src="https://images.hdqwalls.com/wallpapers/i-am-iron-man-marvels-avengers-62.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item" data-bs-interval="6000">
-            <img
-              src="https://images.hdqwalls.com/wallpapers/hulk-marvels-avengers-40.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item" data-bs-interval="6000">
-            <img
-              src="https://images.hdqwalls.com/wallpapers/love-never-ends-wallpaper.jpg"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
+          {photos.map((photo, index) => (
+            <div
+              key={photo.id}
+              className={`carousel-item ${index === 0 ? "active" : ""}`}
+              data-bs-interval="1000"
+            >
+              <img
+                src={photo.urls.small}
+                className="d-block w-100"
+                alt={`Slide ${index}`}
+              />
+            </div>
+          ))}
         </div>
         <button
           className="carousel-control-prev"
