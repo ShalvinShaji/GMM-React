@@ -1,7 +1,7 @@
 // Make sure to include the Axios library in your HTML file using a script tag before using this code.
 import axios from 'axios';
 
-const clientId = import.meta.env.VITE_UNSPLASH_CLIENT_ID;
+const clientId = "FSZNTMwW3p1BBCoF_TJW371_N98cfMKQ01FUuPMpQZI";
 
 const UNSPLASH_ROOT = 'https://api.unsplash.com';
 export const getPhotosByQuery = async (query) => { // Pass the query parameter here
