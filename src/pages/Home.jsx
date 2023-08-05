@@ -1,42 +1,41 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts } from '../js/store';
+import React, { useEffect, useState } from "react";
 import "../css/Home.css";
-import Homecarousel from '../components/Homecarousel';
-import Topbar from '../components/Topbar';
+import Homecarousel from "../components/Homecarousel";
+import About from "../components/About";
+import Homedepartments from "../components/Homedepartments";
+import { getPhotosByQuery } from "../api/fetch";
+import Homerecentnews from "../components/Homerecentnews";
+import Cta from "../components/Cta";
 
 export default function Home() {
-  
-  const products = useSelector((state) => state.products.data);
-  const dispatch = useDispatch();
+  const [photos, setPhotos] = useState([]);
+  const [firstPic, setFirstPic] = useState(null);
+  const [firstSixPics, setFirstSixPics] = useState([]);
 
   useEffect(() => {
-    // Check if the products data is empty before fetching
-    if (products.length === 0) {
-      dispatch(fetchProducts());
+    if (photos.length === 0) {
+      const searchQuery = "avengers";
+      getPhotosByQuery(searchQuery)
+        .then((data) => {
+          console.log("Fetched data:", data);
+          setPhotos(data.results.slice(0, 3));
+          setFirstPic(
+            data.results.length > 0 ? data.results[0].urls.small : null
+          );
+          setFirstSixPics(data.results.slice(0, 6));
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
     }
-  }, [dispatch, products]);
-
-
+  }, [photos]);
   return (
     <>
-      {/* <div>
-        <div className="container products">
-          <div className="row">
-            {products.map((product) => (
-              <div
-                key={product.id}
-                className="col-lg-3 col-md-4 col-6 d-flex flex-column align-items-center mt-4"
-              >
-                <p className="p-0 m-0">Product ID: {product.id}</p>
-                <img src={product.image} alt={product.name} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-      <Homecarousel/>
-      <Topbar/>
+      <Homecarousel photos={photos} />
+      <About firstPic={firstPic} />
+      <Cta/>
+      <Homedepartments/>
+      <Homerecentnews />
     </>
   );
 }

@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+    background: crimson;
+    color: #fff;
+    background-size: cover;
+    padding: 60px 0;
+    margin: 50px 0 !important;
+  }
+  
+  .cta h3 {
+    display: inline-block !important;
+    color: white;
+    /* font-size: 28px; */
+    font-size: var(--h2-font-size);
+    font-weight: 700;
+  }
+  
+  .cta .cta-appointment {
+    /* font-size: 14px !important; */
+    padding: 12px;
+  
+    background-color: crimson;
+    color: white;
+    border: 1px solid white;
+    width: 250px;
+    transition-duration: 0.3s;
+  }
+  .cta .cta-appointment:hover {
+    background-color: #ffffff;
+    border: 1px solid crimson;
+    color: crimson;
+  }
+  

@@ -7,7 +7,7 @@ const UNSPLASH_ROOT = 'https://api.unsplash.com';
 export const getPhotosByQuery = async (query) => { // Pass the query parameter here
     try {
       const response = await axios.get(
-        `${UNSPLASH_ROOT}/search/photos?client_id=${clientId}&query=${query}&per_page=20`
+        `${UNSPLASH_ROOT}/search/photos?client_id=${clientId}&query=${query}&per_page=60`
       );
       return response.data;
     } catch (error) {
@@ -15,6 +15,9 @@ export const getPhotosByQuery = async (query) => { // Pass the query parameter h
       return null;
     }
   };
+
+
+
 
 
 

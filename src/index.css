@@ -168,105 +168,16 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background-color: rgb(252, 245, 246);
-}
 
-.section-title {
-  text-align: center;
-  padding: 30px;
-}
 
-.section-title h2 {
-  font-size: var(--h1-font-size);
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #2c4964;
-  text-transform: uppercase !important;
-}
-
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: crimson;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-.section-title p {
-  margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-@media (max-width: 767px) {
-  .about {
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  .about .section-title {
-    display: none;
-  }
-}
-
-.about h1 {
-  font-size: var(--h1-font-size);
-}
 
 
 
-/*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-.cta {
-  background: crimson;
-  color: #fff;
-  background-size: cover;
-  padding: 60px 0;
-  margin-top: 30px;
-}
 
-.cta h3 {
-  display: inline-block !important;
-  color: white;
-  /* font-size: 28px; */
-  font-size: var(--h2-font-size);
-  font-weight: 700;
-}
-
-.cta .cta-appointment {
-  /* font-size: 14px !important; */
-  padding: 12px;
-
-  background-color: crimson;
-  color: white;
-  border: 1px solid white;
-  width: 250px;
-  transition-duration: 0.3s;
-}
-.cta .cta-appointment:hover {
-  background-color: #ffffff;
-  border: 1px solid crimson;
-  color: crimson;
-}
 
 /*--------------------------------------------------------------
 # Recent News Posts
