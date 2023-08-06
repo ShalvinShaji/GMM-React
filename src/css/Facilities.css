@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# Facility
+--------------------------------------------------------------*/
+
+.facility {
+    border: 1px solid rgba(38, 38, 38, 0.378);
+    padding: var(--mb-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--normal-font-size);
+    margin: 20px 0px;
+    /* height: 270px; */
+    height: auto;
+    transition-duration: 0.4s;
+  }
+  
+  
+  .facility h3 {
+    font-size: var(--name-font-size);
+    display: inline-block !important;
+    color: var(--color-secondary-dark);
+  }
+  
+  
+  .facility img {
+    width: 80px !important;
+    height: 80px !important;
+    padding: 15px;
+    filter: saturate(0);
+  }
+  

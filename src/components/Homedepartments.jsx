@@ -6,7 +6,7 @@ export default function Homedepartments() {
   return (
     <section className="departments" id="departments">
       <Sectionhead sectionname="Departments" />
-      <div >
+      <div className="container" >
         <div className="row mb-4">
           <div className="col-lg-4 col-md-6 ">
             <div className="icon-box">
