@@ -6,9 +6,7 @@ export default function Homecarousel({ photos }) {
     // Programmatically activate the carousel when the component mounts
     const carouselElement = document.getElementById("carouselExampleAutoplaying");
     if (carouselElement) {
-      const carousel = new window.bootstrap.Carousel(carouselElement, {
-        interval: 4000, // Set the interval here if you want to change it
-      });
+      const carousel = new window.bootstrap.Carousel(carouselElement);
     }
   }, []);
 
@@ -19,12 +17,14 @@ export default function Homecarousel({ photos }) {
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
         data-bs-pause="false"
+        
       >
         <div className="carousel-inner">
           {photos.map((photo, index) => (
             <div
               key={photo.id}
               className={`carousel-item ${index === 0 ? "active" : ""}`}
+              data-bs-interval="5000"
             >
               <img
                 src={photo.urls.small}
