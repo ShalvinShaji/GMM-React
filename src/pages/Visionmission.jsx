@@ -10,16 +10,16 @@ export default function Visionmission() {
       <section className="Visionmission" id="Visionmission">
         <Sectionhead sectionname=" Vission & Mission" />
         <div className="container">
-          <div class="row">
-            <div class="col-lg-5">
+          <div className="row">
+            <div className="col-lg-5">
               <img
                 src="./assets/img/carousel-images/about.jpg"
                 alt=""
-                class="h-100 w-100 rounded"
+                className="h-100 w-100 rounded"
               />
             </div>
-            <div class="col-lg-7 d-flex flex-column justify-content-around align-items-baseline">
-              <div class="vision-mission-box">
+            <div className="col-lg-7 d-flex flex-column justify-content-around align-items-baseline">
+              <div className="vision-mission-box">
                 <h3>Our vision</h3>
                 <p>
                   The Rev. George Mathen Medical Mission seeks to be a centre of
@@ -27,7 +27,7 @@ export default function Visionmission() {
                   Jesus Christ Mission.
                 </p>
               </div>
-              <div class="vision-mission-box">
+              <div className="vision-mission-box">
                 <h3>our mission</h3>
                 <p>
                   The Objective of the Rev. George Matthen Medical Mission

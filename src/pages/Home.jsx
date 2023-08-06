@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     if (photos.length === 0) {
-      const searchQuery = "avengers";
+      const searchQuery = "hospital";
       getPhotosByQuery(searchQuery)
         .then((data) => {
           console.log("Fetched data:", data);
