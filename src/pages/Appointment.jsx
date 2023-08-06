@@ -5,14 +5,16 @@ import "../css/Appointment.css";
 
 
 function Appointment() {
-  const [formData, setFormData] = useState({
+
+  const initialFormData={
     name: "",
     email: "",
     phone: "",
     date: "",
     department: "",
     doctor: "",
-  });
+  };
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,6 +28,8 @@ function Appointment() {
     e.preventDefault();
     // Here you can handle the form submission, for example:
     console.log(formData);
+    // Clear the form fields after submission
+    setFormData(initialFormData);
   };
 
   return (
@@ -52,6 +56,7 @@ function Appointment() {
                   data-msg="Please enter at least 4 chars"
                   value={formData.name}
                   onChange={handleChange}
+                  required
                 />
                 <div className="validate"></div>
               </div>
@@ -66,6 +71,7 @@ function Appointment() {
                   data-msg="Please enter a valid email"
                   value={formData.email}
                   onChange={handleChange}
+                  required
                 />
                 <div className="validate"></div>
               </div>
@@ -80,6 +86,7 @@ function Appointment() {
                   data-msg="Please enter at least 4 chars"
                   value={formData.phone}
                   onChange={handleChange}
+                  required
                 />
                 <div className="validate"></div>
               </div>
@@ -97,6 +104,7 @@ function Appointment() {
                   data-msg="Please enter at least 4 chars"
                   value={formData.date}
                   onChange={handleChange}
+                  required
                 />
                 <div className="validate"></div>
               </div>
@@ -107,31 +115,31 @@ function Appointment() {
                   className="form-select"
                   value={formData.department}
                   onChange={handleChange}
+                  required
                 >
                   <option value="">Select Department</option>
-                  <option value="Department 1" className="text-capitalize">
+                  <option value="General medicine" className="text-capitalize">
                     General medicine
                   </option>
-                  <option value="Department 2" className="text-capitalize">
+                  <option value="Cardiology" className="text-capitalize">
                     Cardiology
                   </option>
-                  <option value="Department 3" className="text-capitalize">
+                  <option value="Pediatrics" className="text-capitalize">
                     Pediatrics
                   </option>
-                  <option value="Department 4" className="text-capitalize">
+                  <option value="Orthopedics" className="text-capitalize">
                     Orthopedics
                   </option>
-                  <option value="Department 5" className="text-capitalize">
+                  <option value="Nephrology" className="text-capitalize">
                     Nephrology
                   </option>
-                  <option value="Department 6" className="text-capitalize">
+                  <option value="ENT" className="text-capitalize">
                     ENT
                   </option>
-                  <option value="Department 7" className="text-capitalize">
+                  <option value="Home Care Service and Palliative service" className="text-capitalize">
                     Home Care Service and Palliative service
                   </option>
                 </select>
-                <div className="validate"></div>
               </div>
               <div className="col-md-4 form-group mt-3">
                 <select
@@ -140,36 +148,37 @@ function Appointment() {
                   className="form-select"
                   value={formData.doctor}
                   onChange={handleChange}
+                  required
                 >
                   <option value="">Select Doctor</option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr K. A Chacko" className="text-capitalize">
                     Dr K. A Chacko
                   </option>
-                  <option value="Doctor 2" className="text-capitalize">
+                  <option value="Dr N Damodaran" className="text-capitalize">
                     Dr N Damodaran
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Binoy G Russel" className="text-capitalize">
                     Dr Binoy G Russel
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Sunnychen Devasia" className="text-capitalize">
                     Dr Sunnychen Devasia
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Varkey S Kulangara" className="text-capitalize">
                     Dr Varkey S Kulangara
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Kiran Babu" className="text-capitalize">
                     Dr Kiran Babu
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Sneha Anna Joy" className="text-capitalize">
                     Dr Sneha Anna Joy
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Rohan Chacko Jacob" className="text-capitalize">
                     Dr Rohan Chacko Jacob
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Sara Jacob" className="text-capitalize">
                     Dr Sara Jacob
                   </option>
-                  <option value="Doctor 1" className="text-capitalize">
+                  <option value="Dr Midhun Raj" className="text-capitalize">
                     Dr Midhun Raj
                   </option>
                 </select>

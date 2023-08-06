@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Bcrumbs from "../components/Bcrumbs";
 import Sectionhead from "../components/Sectionhead";
 import "../css/Contact.css";
 
 export default function Contact() {
+
+  const initialFormData={
+    name: "",
+    email: "",
+    message: "",
+  }
+
+  const [formData, setFormData] = useState(initialFormData);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can handle the form submission, for example:
+    console.log(formData);
+    setFormData(initialFormData)
+  };
+
   return (
     <>
       <Bcrumbs breadcrumbspage="Contact" />
@@ -15,72 +39,79 @@ export default function Contact() {
             height="350px"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.7230635742662!2d76.66237751457722!3d9.445665893232569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b063aeab5b8f6c7%3A0xd86be7f44dd2b9c8!2sRev.%20George%20Mathen%20Mission%20Hospital%2C%20Mallappally!5e0!3m2!1sen!2sin!4v1677327044996!5m2!1sen!2sin"
           ></iframe>
-          <div class="row mt-5">
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="bx bx-current-location"></i>
+          <div className="row mt-5">
+            <div className="col-lg-4">
+              <div className="info">
+                <div className="address">
+                  <i className="bx bx-current-location"></i>
                   <h4>Location:</h4>
                   <p>Mallappally East, P O, Pathanamthitta, Kerala</p>
                 </div>
 
-                <div class="email">
-                  <i class="bx bx-envelope "></i>
+                <div className="email">
+                  <i className="bx bx-envelope "></i>
                   <h4>Email:</h4>
                   <p>gmmhospital@gmail.com</p>
                 </div>
 
-                <div class="phone">
-                  <i class="bx bx-phone"></i>
+                <div className="phone">
+                  <i className="bx bx-phone"></i>
                   <h4>Call:</h4>
                   <p> 0469-2782262, 8281161330</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-8 feedback  mt-lg-0">
-              <h4 class=" my-5 my-lg-3">Share your feedback with us:</h4>
+            <div className="col-lg-8 feedback  mt-lg-0">
+              <h4 className=" my-5 my-lg-3">Share your feedback with us:</h4>
 
               <form
                 action="forms/contact.php"
                 method="post"
                 role="form"
-                class="php-email-form"
+                className="php-email-form"
+                onSubmit={handleSubmit}
               >
-                <div class="row">
-                  <div class="col-md-6 form-group">
+                <div className="row">
+                  <div className="col-md-6 form-group">
                     <input
                       type="text"
                       name="name"
-                      class="form-control"
+                      className="form-control"
                       id="name"
                       placeholder="Your Name"
                       required
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <div className="col-md-6 form-group mt-3 mt-md-0">
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       name="email"
                       id="email"
                       placeholder="Your Email"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
 
-                <div class="form-group mt-3">
+                <div className="form-group mt-3">
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     name="message"
                     rows="5"
                     placeholder="Message"
                     required
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
 
-                <div class="text-center">
+                <div className="text-center">
                   <button type="submit">Send Message</button>
                 </div>
               </form>
