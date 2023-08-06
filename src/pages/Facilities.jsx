@@ -10,44 +10,44 @@ export default function Facilities() {
       <section className="Governingboard" id="Governingboard">
         <Sectionhead sectionname="Our Facilities" />
         <div className="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="facility">
-                <div class="facility-img">
+          <div className="row">
+            <div className="col-lg-3">
+              <div className="facility">
+                <div className="facility-img">
                   <img src="./assets/img/facilities/casualty.png" alt="" />
                 </div>
-                <div class="facility-name">
-                  <h3 class="text-uppercase">casualty</h3>
+                <div className="facility-name">
+                  <h3 className="text-uppercase">casualty</h3>
                 </div>               
               </div>
             </div>
-            <div class="col-lg-3">
-              <div class="facility">
-                <div class="facility-img">
+            <div className="col-lg-3">
+              <div className="facility">
+                <div className="facility-img">
                   <img src="./assets/img/facilities/casualty.png" alt="" />
                 </div>
-                <div class="facility-name">
-                  <h3 class="text-uppercase">casualty</h3>
+                <div className="facility-name">
+                  <h3 className="text-uppercase">casualty</h3>
                 </div>               
               </div>
             </div>
-            <div class="col-lg-3">
-              <div class="facility">
-                <div class="facility-img">
+            <div className="col-lg-3">
+              <div className="facility">
+                <div className="facility-img">
                   <img src="./assets/img/facilities/casualty.png" alt="" />
                 </div>
-                <div class="facility-name">
-                  <h3 class="text-uppercase">casualty</h3>
+                <div className="facility-name">
+                  <h3 className="text-uppercase">casualty</h3>
                 </div>               
               </div>
             </div>
-            <div class="col-lg-3">
-              <div class="facility">
-                <div class="facility-img">
+            <div className="col-lg-3">
+              <div className="facility">
+                <div className="facility-img">
                   <img src="./assets/img/facilities/casualty.png" alt="" />
                 </div>
-                <div class="facility-name">
-                  <h3 class="text-uppercase">casualty</h3>
+                <div className="facility-name">
+                  <h3 className="text-uppercase">casualty</h3>
                 </div>               
               </div>
             </div>

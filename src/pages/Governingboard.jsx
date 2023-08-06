@@ -10,8 +10,8 @@ export default function Governingboard() {
       <section className="Governingboard" id="Governingboard">
         <Sectionhead sectionname="Governing Board" />
         <div className="container">
-          <div class="row">
-            <div class="col">
+          <div className="row">
+            <div className="col-12">
               <p>
                 The administration is vested with the Rev. George Mathen Medical
                 Mission Charitable Society which is headed by the Vicar of the
@@ -22,10 +22,10 @@ export default function Governingboard() {
               </p>
             </div>
           </div>
-          <div class="row my-4">
-            <div class="col-md-6 col-lg-4 col-xl-3 ">
-              <div class="member d-flex flex-column align-items-center justify-content-center">
-                <div class="member-info text-center">
+          <div className="row my-4">
+            <div className="col-md-6 col-lg-4 col-xl-3 ">
+              <div className="member d-flex flex-column align-items-center justify-content-center">
+                <div className="member-info text-center">
                   <span>Patron</span>
                   <h4>Rt Rev Dr. Malayil Sabu Koshy Cherian</h4>
                 </div>
