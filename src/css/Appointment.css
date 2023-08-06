@@ -1,0 +1,120 @@
+.appointment .email-form {
+    width: 100%;
+  }
+  
+  .appointment .email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .appointment .email-form .validate {
+    display: none;
+    color: crimson;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    /* font-size: 13px; */
+  }
+  
+  .appointment .email-form .error-message {
+    display: none;
+    color: #fff;
+    background: crimson;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .appointment .email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  
+  .appointment .email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: crimson;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .appointment .email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .appointment .email-form .loading:before {
+    content: "";
+    display: inline-block;
+    /* border-radius: 50%; */
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .appointment .email-form input,
+  .appointment .email-form textarea,
+  .appointment .email-form select {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: var(--small-font-size);
+    padding: 10px !important;
+  }
+  
+  .appointment .email-form input:focus,
+  .appointment .email-form textarea:focus,
+  .appointment .email-form select:focus {
+    border-color: rgb(163, 163, 163);
+  }
+  
+  .appointment .email-form input,
+  .appointment .email-form select {
+    height: 44px;
+  }
+  
+  .appointment .email-form textarea {
+    padding: 10px 12px;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.appointment  button[type="submit"] {
+    padding: 12px;
+    margin-top: var(--mb-2);
+    background-color: crimson;
+    color: white;
+    border: 1px solid white;
+    width: 250px;
+    transition-duration: 0.3s;
+  }
+  
+  .appointment button[type="submit"]:hover {
+    background-color: #ffffff;
+    border: 1px solid crimson;
+    color: crimson;
+  }

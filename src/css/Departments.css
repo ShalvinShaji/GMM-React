@@ -1,104 +1,227 @@
 /*--------------------------------------------------------------
-# Departments
+# DEPARTMENTS DETAILED PAGE
 --------------------------------------------------------------*/
-.departments .icon-box {
-    text-align: center;
-    border: 1px solid #d5e1ed;
-    padding: 30px 30px;
-    transition: all ease-in-out 0.3s;
-    margin-bottom: 20px;
-    height: 250px;
+.departments .nav-tabs {
+  border: 0;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #eee;
+}
+.departments li {
+  margin: 10px;
+}
+
+.departments .nav-link {
+  border: 0;
+  padding: 15px;
+  color: #3e3e3e;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: white;
+  margin: 0;
+}
+
+.departments .nav-link p {
+  font-size: var(--normal-font-size) !important;
+  /* font-weight: var(--font-semi-bold); */
+
+  transition: 0.3s;
+  margin: 0;
+  /* color: black !important; */
+  transition-duration: 0.4s;
+  /* text-transform: uppercase; */
+}
+
+.departments .nav-link p {
+  margin-bottom: 0;
+}
+.departments .nav-link:hover {
+  background-color: crimson;
+}
+
+.departments .nav-link:hover p {
+  color: white !important;
+  /* text-align: center !important; */
+  translate: 20px 0;
+}
+
+.departments .nav-link.active {
+  background-color: crimson;
+
+  /* border-color: crimson; */
+}
+
+.departments .nav-link.active p {
+  color: white !important;
+}
+
+.departments .tab-pane.active {
+  animation: slide-down 0.5s ease-out;
+}
+
+.departments .tab-pane h3 {
+  font-size: 20px;
+  color: #2c4964;
+  text-transform: uppercase;
+  /* margin: var(--mb-5) 0px; */
+  margin: 0;
+  padding: 0;
+}
+.departments .tab-pane .department-img {
+  width: 100%;
+}
+.departments .tab-pane .department-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.departments .tab-pane .department-img p {
+  text-align: justify;
+}
+
+.departments .department-description p {
+  text-align: justify;
+  margin-bottom: var(--mb-3);
+}
+
+.departments .doc {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin-right: 25px;
+  margin-bottom: var(--mb-3);
+  padding: 10px;
+  box-shadow: 0px 2px 15px rgba(155, 154, 154, 0.455);
+}
+
+.departments .doc-info {
+  padding: var(--mb-2);
+  width: 300px;
+}
+
+.departments .doc-info p {
+  margin: 0;
+}
+
+.departments .doc:hover {
+  box-shadow: 0px 2px 15px rgba(49, 47, 47, 0.149);
+}
+
+.departments .doc .pic {
+  overflow: hidden;
+  width: 180px;
+  height: 220px;
+  object-fit: cover !important;
+  display: flex;
+  justify-content: center !important;
+}
+
+.departments .doc .pic img {
+  transition: ease-in-out 0.3s;
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.departments .doc h4 {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  /* color: #2c4964; */
+}
+
+.departments .doc span {
+  display: block;
+  font-size: 15px;
+  position: relative;
+  font-weight: 600;
+  color: #3e3e3e;
+}
+
+.doc-appointment {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 35px;
+  /* border-radius: 25px; */
+  transition: 0.5s;
+  color: white;
+  background-color: crimson;
+}
+
+.doc-appointment:hover {
+  background-color: #db0732;
+  color: white;
+}
+
+/* .doctors .doc span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #b2c8dd;
+  bottom: 0;
+  left: 0;
+} */
+
+.departments .doc p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  /* .departments .tab-pane img {
+    float: none;
+    padding: 0 0 15px 0;
+    max-width: 100%;
+  } */
+
+
+  .departments .tab-pane .department-img img{
+    height: 185px;
   }
-  
-  .departments .icon-box img {
-    margin: 0 auto;
-    width: 60px !important;
-    height: 60px !important;
-    transition: all 0.3s ease-out 0s;
+
+  .departments .doc {
     display: flex;
-    object-fit: contain !important;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    transform-style: preserve-3d;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    flex-direction: column !important;
+    padding: 40px;
   }
-  
-  .departments .icon-box img {
-    transition: ease-in-out 0.3s;
+
+  .departments .doc-info {
+    margin-bottom: 10px;
   }
-  
-  .departments .icon-box:hover img {
-    transform: scale(1.1);
+
+  .doc-appointment {
+    padding: 6px 25px;
+    margin-bottom: 10px;
   }
-  
-  .departments .icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 15px;
-    /* font-size: 20px; */
-    font-size: var(--h3-font-size);
+
+  .departments .department-description p {
+    color: #777777;
+    margin-bottom: var(--mb-5);
   }
-  
-  .departments .icon-box h4 a {
-    color: #2c4964;
+}
+
+/* .departments .tab-pane h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: crimson;
+  text-align: center !important;
+} */
+.departments .tab-pane p {
+  color: #3e3e3e;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
   }
-  
-  .departments .icon-box p {
-    line-height: 24px;
-    /* font-size: 14px; */
-    font-size: var(--small-font-size);
-    /* font-size: var(--normal-font-size); */
-    margin-bottom: 0;
+
+  100% {
+    opacity: 1;
   }
-  
-  .departments .icon-box:hover {
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-    transform: translateY(-5px);
-    /* transform: translateY(-5px);   */
-  }
-  
-  .departments .btn {
-    /* font-size: 12px !important; */
-    transition-duration: 0.3s;
-  }
-  .departments .btn:hover {
-    border: none;
-    background-color: crimson;
-    color: white;
-  }
-  .departments-more-arrow img {
-    transition: none !important;
-    transform: none !important;
-    height: 30px !important;
-    height: 30px !important;
-  }
-  .departments .more-departments {
-    /* font-size: 14px !important; */
-    padding: 12px;
-    background-color: crimson;
-    border: 1px solid crimson;
-    color: white;
-    width: 250px;
-    transition-duration: 0.3s;
-  }
-  .departments .more-departments:hover {
-    background-color: white;
-    color: crimson;
-    border: 1px solid crimson;
-  }
-  
-  .departments .more-departments {
-    /* font-size: 14px !important; */
-    padding: 12px;
-    background-color: crimson;
-    border: 1px solid crimson;
-    color: white;
-    width: 250px;
-    transition-duration: 0.3s;
-  }
-  .departments .more-departments:hover {
-    background-color: white;
-    color: crimson;
-    border: 1px solid crimson;
-  }
+}

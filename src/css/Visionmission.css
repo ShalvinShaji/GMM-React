@@ -1,3 +1,9 @@
 .vision-mission-box p{
     text-align: justify !important;
 }
+
+.vision-mission-box h3{
+    font-size: 18px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
