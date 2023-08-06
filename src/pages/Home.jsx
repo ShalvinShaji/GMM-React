@@ -18,7 +18,7 @@ export default function Home() {
       getPhotosByQuery(searchQuery)
         .then((data) => {
           console.log("Fetched data:", data);
-          setPhotos(data.results.slice(0, 3));
+          setPhotos(data.results.slice(6, 15));
           setFirstPic(
             data.results.length > 0 ? data.results[0].urls.small : null
           );

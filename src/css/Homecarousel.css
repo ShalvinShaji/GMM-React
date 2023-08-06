@@ -1,14 +1,4 @@
-/* Show carousel control buttons on mobile devices */
-/* @media (max-width: 768px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-      display: block !important;
-      font-size: 10px !important;
-    }
-  } */
 
-
-  /* Homecarousel.css */
 
 /* Set the carousel height to fill the remaining viewport height for larger screens */
 .carousel {
@@ -51,3 +41,8 @@
   }
 }
   
+@media (max-width: 767px) {
+  .carousel-control-prev, .carousel-control-next{
+    display: none;
+  }
+}
