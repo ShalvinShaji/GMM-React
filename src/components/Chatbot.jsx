@@ -366,31 +366,37 @@ const Chatbot = () => {
     let dep7 = "Emergency medicine";
     let dep8 = "Home and palliative care";
     setTimeout(() => {
-        createBotResponseElement(answer);
+      createBotResponseElement(answer);
+      setTimeout(() => {
+        createBotResponseElementButton(dep1, getGeneralMedicineDetails);
         setTimeout(() => {
-            createBotResponseElementButton(dep1, getGeneralMedicineDetails);
+          createBotResponseElementButton(dep2, getCardiologyDetails);
+          setTimeout(() => {
+            createBotResponseElementButton(dep3, getPediatricsDetails);
             setTimeout(() => {
-                createBotResponseElementButton(dep2, getCardiologyDetails);
+              createBotResponseElementButton(dep4, getOrthopedicsDetails);
+              setTimeout(() => {
+                createBotResponseElementButton(dep5, getNephrologyDetails);
                 setTimeout(() => {
-                    createBotResponseElementButton(dep3, getPediatricsDetails);
+                  createBotResponseElementButton(dep6, getEntDetails);
+                  setTimeout(() => {
+                    createBotResponseElementButton(
+                      dep7,
+                      getEmergencyMedicineDetails
+                    );
                     setTimeout(() => {
-                        createBotResponseElementButton(dep4, getOrthopedicsDetails);
-                        setTimeout(() => {
-                            createBotResponseElementButton(dep5, getNephrologyDetails);
-                            setTimeout(() => {
-                                createBotResponseElementButton(dep6, getEntDetails);
-                                setTimeout(() => {
-                                    createBotResponseElementButton(dep7, getEmergencyMedicineDetails);
-                                    setTimeout(() => {
-                                        createBotResponseElementButton(dep8, getPalliativeCareDetails);
-                                    }, 1000);
-                                },900);
-                            }, 800);  
-                        }, 700);                                           
-                    }, 600);
-                }, 500);
-            }, 400);
-        }, 300);
+                      createBotResponseElementButton(
+                        dep8,
+                        getPalliativeCareDetails
+                      );
+                    }, 1000);
+                  }, 900);
+                }, 800);
+              }, 700);
+            }, 600);
+          }, 500);
+        }, 400);
+      }, 300);
     }, 200);
   };
 
@@ -434,7 +440,11 @@ const Chatbot = () => {
       }
     >
       <button id="chatbot_toggle" onClick={toggleChatbot}>
-        <img src="./assets/img/chatbot/chatbot.png" alt="" srcSet="" />
+        <img
+          src="https://heronavbar.netlify.app/assets/img/chatbot/chatbot.jpeg"
+          alt=""
+          srcSet=""
+        />
         <i className="bx bxs-chevron-down"></i>
       </button>
       <div className="main-title">
