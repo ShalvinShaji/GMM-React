@@ -449,7 +449,11 @@ const Chatbot = () => {
       </button>
       <div className="main-title">
         <div>
-          <img src="./assets/img/chatbot/chatbot.jpeg" alt="" srcSet="" />
+          <img
+            src="https://heronavbar.netlify.app/assets/img/chatbot/chatbot.jpeg"
+            alt=""
+            srcSet=""
+          />
         </div>
         <span>Dr. Bobo</span>
       </div>
