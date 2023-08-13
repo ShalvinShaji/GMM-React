@@ -156,7 +156,7 @@
   color: black;
   border-radius: 8px 8px 8px 2px;
   background-color: lavender;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap !important; */
 }
 .chat-button-message-received {
   background-color: white;
