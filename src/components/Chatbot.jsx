@@ -440,12 +440,16 @@ const Chatbot = () => {
       }
     >
       <button id="chatbot_toggle" onClick={toggleChatbot}>
-        <img
-          src="https://heronavbar.netlify.app/assets/img/chatbot/chatbot.jpeg"
-          alt=""
-          srcSet=""
-        />
-        <i className="bx bxs-chevron-down"></i>
+        {isChatbotCollapsed ? (
+          <img
+            src="https://heronavbar.netlify.app/assets/img/chatbot/chatbot.jpeg"
+            alt=""
+            srcSet=""
+            className="Chatbot-toggle-logo"
+          />
+        ) : (
+          <i className="bx bxs-chevron-down"></i>
+        )}
       </button>
       <div className="main-title">
         <div>
