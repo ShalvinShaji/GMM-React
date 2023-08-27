@@ -1,79 +1,79 @@
-.footer, .footer-credits{
-    background-color: #262324;
-    color: #c9c7c7;
-    padding: 30px;
+.footer,
+.footer-credits {
+  background-color: #262324;
+  color: #c9c7c7;
+  padding: 30px;
 }
-.footer{
-    line-height: 2.5;
-    margin-top: 30px;
-}
-
-.footer .hospital-contact{
-    line-height: 2;
-}
-.footer h4{
-    color: #c9c7c7 !important;
+.footer {
+  line-height: 2.5;
+  margin-top: 30px;
 }
 
-.footer-data{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer .hospital-contact {
+  line-height: 2;
+}
+.footer h4 {
+  color: #c9c7c7 !important;
+  font-size: 16px;
 }
 
-.footer img{
-    height: 100px;
-    width: 100px;
+.footer-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer h3{
-    font-size: 1rem;
+.footer img {
+  height: 100px;
+  width: 100px;
 }
-.footer p{
-    font-size: .8rem;
-    margin-bottom: 8px !important;
+
+.footer h3 {
+  font-size: 1rem;
+}
+.footer p {
+  font-size: 0.8rem;
+  margin-bottom: 8px !important;
 }
 
 .footer ul {
-    padding: 0;
+  padding: 0;
 }
-.footer ul li{
-    list-style: none;
-    color: #c9c7c7 !important;
-    
+.footer ul li {
+  list-style: none;
+  color: #c9c7c7 !important;
 }
-
 
 .footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  .footer .social-links a:hover {
-    background: white;
-    color: crimson;
-    text-decoration: none;
-  }
+  font-size: 18px;
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
 
-  .footer .footer-links{
-    font-size: .8rem;
-  }
+.footer .social-links a:hover {
+  background: white;
+  color: crimson;
+  text-decoration: none;
+}
 
-  .footer-credits{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
-    font-size: .8rem;
-    padding: 15px;
-  }
-  .footer-credits .credit-azaic{
-   color: crimson;
-  }
+.footer .footer-links {
+  font-size: 0.8rem;
+}
+
+.footer-credits {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 0.8rem;
+  padding: 15px;
+}
+.footer-credits .credit-azaic {
+  color: crimson;
+}
