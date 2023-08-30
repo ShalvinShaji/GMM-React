@@ -1,48 +1,64 @@
-
-
-/* Set the carousel height to fill the remaining viewport height for larger screens */
-.carousel {
-  height: calc(100vh - 100px);
-}
-
-
-
-/* Adjust image dimensions to cover the full carousel area for larger screens */
-.carousel-inner img {
+/* .carousel-inner img {
   object-fit: fill !important;
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   box-shadow: none !important;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  /* Reduce the carousel height for smaller screens */
   .carousel {
-    height: 270px !important; /* You can adjust the value as needed */
+    height: 270px !important;
   }
 
-  /* Adjust image dimensions to cover the full carousel area for smaller screens */
   .carousel-inner img {
     height: 250px !important;
-    width: 100%;
   }
 }
 
-
 @media (min-width: 992px) {
-
-  .hero{
+  .hero {
     margin: 0;
     padding: 0;
   }
   .carousel-item {
-    height: calc(100vh - 130px);  
+    height: calc(100vh - 130px);
   }
 }
-  
+
 @media (max-width: 767px) {
-  .carousel-control-prev, .carousel-control-next{
+  .carousel-control-prev,
+  .carousel-control-next {
     display: none;
+  }
+} */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-item {
+    padding: 40px;
+  }
+}
+
+.carousel-item img {
+  max-width: 100%;
+  object-fit: cover !important;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    margin: 0;
+    padding: 0;
+  }
+  .carousel-item {
+    height: calc(100vh - 130px);
   }
 }

@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import "../css/Homecarousel.css";
 export default function Homecarousel({ photos }) {
-
   useEffect(() => {
     // Programmatically activate the carousel when the component mounts
-    const carouselElement = document.getElementById("carouselExampleAutoplaying");
+    const carouselElement = document.getElementById(
+      "carouselExampleAutoplaying"
+    );
     if (carouselElement) {
       const carousel = new window.bootstrap.Carousel(carouselElement);
     }
@@ -17,7 +18,6 @@ export default function Homecarousel({ photos }) {
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
         data-bs-pause="false"
-        
       >
         <div className="carousel-inner">
           {photos.map((photo, index) => (
