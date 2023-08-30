@@ -6,10 +6,14 @@ export default function About({ firstPic }) {
   return (
     <>
       <section className="about" id="about">
-      <Sectionhead sectionname="About"  />
+        <Sectionhead
+          sectionname="About"
+          sectiondescription="know about"
+          sectiondescriptionbold="ourself"
+        />
         <div className="container ">
           <div className="row">
-            <div className="col-lg-7">
+            <div className="col-lg-7 d-flex flex-column justify-content-center align-items-start">
               <div className="position-relative pb-3">
                 <h1 className="mb-0 ">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.

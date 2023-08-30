@@ -19,7 +19,11 @@ export default function Gallery() {
     <>
       <Bcrumbs breadcrumbspage="Gallery" />
       <section className="Gallery" id="Gallery">
-        <Sectionhead sectionname="Gallery" />
+        <Sectionhead
+          sectionname="Gallery"
+          sectiondescription="Our"
+          sectiondescriptionbold="Gallery"
+        />
         <div className="container">
           <div className="gallery-item">
             <div className="gallery-item">

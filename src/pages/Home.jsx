@@ -5,7 +5,6 @@ import About from "../components/About";
 import Homedepartments from "../components/Homedepartments";
 import { getPhotosByQuery } from "../api/fetch";
 import Homerecentnews from "../components/Homerecentnews";
-import Cta from "../components/Cta";
 
 export default function Home() {
   const [photos, setPhotos] = useState([]);
@@ -33,8 +32,7 @@ export default function Home() {
     <>
       <Homecarousel photos={photos} />
       <About firstPic={firstPic} />
-      <Cta/>
-      <Homedepartments/>
+      <Homedepartments />
       <Homerecentnews />
     </>
   );

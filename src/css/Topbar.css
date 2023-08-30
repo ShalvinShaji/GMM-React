@@ -1,35 +1,55 @@
-/*======================================
-	 Top Bar CSS
-========================================*/
 .topbar {
-    height: 40px;
-  }
-  
-  .topbar .hospital-contact span {
-    font-size: var(--small-font-size);
-  }
-  .topbar .hospital-contact i {
-    margin-right: var(--mb-1);
-    border: 1px solid white;
-    color: white;
-    padding: 5px;
-    border-radius: 50%;
-    transition-duration: 0.4s;
-  }
-  .topbar .hospital-contact i:hover {
-    background-color: #fff;
-    color: crimson;
-  }
-  .topbar .hospital-social i {
-    margin-right: var(--mb-2);
-    border: 1px solid white;
-    color: white;
-    padding: 5px;
-    border-radius: 50%;
-    transition-duration: 0.4s;
-  }
-  .topbar .hospital-social i:hover {
-    background-color: #fff;
-    color: crimson;
-  }
-  
+  height: 40px;
+  background-color: crimson;
+  color: white;
+}
+
+.topbar .hospital-contact {
+  font-size: 12px;
+
+  font-weight: 500;
+}
+.topbar .hospital-contact i {
+  margin-right: var(--mb-1);
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+}
+
+.topbar .hospital-contact i:hover {
+  background-color: white;
+  color: crimson;
+  border: 1px solid #ffffff;
+}
+
+.emergency-contact,
+.hospital-email,
+.make-appointment {
+  border-right: 1px solid #ffffff;
+  margin-right: 12px;
+}
+
+.topbar .hospital-social i {
+  margin-right: var(--mb-1);
+  border: 1px solid #ffffff;
+  color: white !important;
+  padding: 5px;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+}
+
+.topbar .hospital-social i:hover {
+  background-color: white;
+  color: crimson !important;
+  border: 1px solid #ffffff;
+}
+
+.make-appointment span {
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.make-appointment span:hover {
+  color: #faa5b6;
+}

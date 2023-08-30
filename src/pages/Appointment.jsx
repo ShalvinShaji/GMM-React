@@ -3,10 +3,8 @@ import Bcrumbs from "../components/Bcrumbs";
 import Sectionhead from "../components/Sectionhead";
 import "../css/Appointment.css";
 
-
 function Appointment() {
-
-  const initialFormData={
+  const initialFormData = {
     name: "",
     email: "",
     phone: "",
@@ -36,7 +34,11 @@ function Appointment() {
     <>
       <Bcrumbs breadcrumbspage="Appointment" />
       <section className="appointment" id="appointment">
-        <Sectionhead sectionname="Make an Appointment" />
+        <Sectionhead
+          sectionname="Appointment"
+          sectiondescription="Make an "
+          sectiondescriptionbold="Appointment"
+        />
         <div className="container">
           <form
             onSubmit={handleSubmit}
@@ -136,7 +138,10 @@ function Appointment() {
                   <option value="ENT" className="text-capitalize">
                     ENT
                   </option>
-                  <option value="Home Care Service and Palliative service" className="text-capitalize">
+                  <option
+                    value="Home Care Service and Palliative service"
+                    className="text-capitalize"
+                  >
                     Home Care Service and Palliative service
                   </option>
                 </select>
@@ -160,10 +165,16 @@ function Appointment() {
                   <option value="Dr Binoy G Russel" className="text-capitalize">
                     Dr Binoy G Russel
                   </option>
-                  <option value="Dr Sunnychen Devasia" className="text-capitalize">
+                  <option
+                    value="Dr Sunnychen Devasia"
+                    className="text-capitalize"
+                  >
                     Dr Sunnychen Devasia
                   </option>
-                  <option value="Dr Varkey S Kulangara" className="text-capitalize">
+                  <option
+                    value="Dr Varkey S Kulangara"
+                    className="text-capitalize"
+                  >
                     Dr Varkey S Kulangara
                   </option>
                   <option value="Dr Kiran Babu" className="text-capitalize">
@@ -172,7 +183,10 @@ function Appointment() {
                   <option value="Dr Sneha Anna Joy" className="text-capitalize">
                     Dr Sneha Anna Joy
                   </option>
-                  <option value="Dr Rohan Chacko Jacob" className="text-capitalize">
+                  <option
+                    value="Dr Rohan Chacko Jacob"
+                    className="text-capitalize"
+                  >
                     Dr Rohan Chacko Jacob
                   </option>
                   <option value="Dr Sara Jacob" className="text-capitalize">

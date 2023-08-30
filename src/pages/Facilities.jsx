@@ -7,8 +7,12 @@ export default function Facilities() {
   return (
     <>
       <Bcrumbs breadcrumbspage="Facilities" />
-      <section className="Governingboard" id="Governingboard">
-        <Sectionhead sectionname="Our Facilities" />
+      <section className="Facilities" id="Facilities">
+        <Sectionhead
+          sectionname="Facilities"
+          sectiondescription="Our"
+          sectiondescriptionbold="Facilities"
+        />
         <div className="container">
           <div className="row">
             <div className="col-lg-3">
@@ -18,7 +22,7 @@ export default function Facilities() {
                 </div>
                 <div className="facility-name">
                   <h3 className="text-uppercase">casualty</h3>
-                </div>               
+                </div>
               </div>
             </div>
             <div className="col-lg-3">
@@ -28,7 +32,7 @@ export default function Facilities() {
                 </div>
                 <div className="facility-name">
                   <h3 className="text-uppercase">casualty</h3>
-                </div>               
+                </div>
               </div>
             </div>
             <div className="col-lg-3">
@@ -38,7 +42,7 @@ export default function Facilities() {
                 </div>
                 <div className="facility-name">
                   <h3 className="text-uppercase">casualty</h3>
-                </div>               
+                </div>
               </div>
             </div>
             <div className="col-lg-3">
@@ -48,7 +52,7 @@ export default function Facilities() {
                 </div>
                 <div className="facility-name">
                   <h3 className="text-uppercase">casualty</h3>
-                </div>               
+                </div>
               </div>
             </div>
           </div>

@@ -8,7 +8,11 @@ export default function Visionmission() {
     <>
       <Bcrumbs breadcrumbspage="Vission & Mission" />
       <section className="Visionmission" id="Visionmission">
-        <Sectionhead sectionname=" Vission & Mission" />
+        <Sectionhead
+          sectionname="Vission & Mission"
+          sectiondescription="our"
+          sectiondescriptionbold="Vission & Mission"
+        />
         <div className="container">
           <div className="row">
             <div className="col-lg-5">

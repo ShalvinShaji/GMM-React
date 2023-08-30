@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Bcrumbs from "../components/Bcrumbs";
-import '../css/Departments.css'
+import Sectionhead from "../components/Sectionhead";
+import "../css/Departments.css";
 
 export default function Department() {
-  
   const [activeTab, setActiveTab] = useState("tab-1"); // Default to the first tab (you can set any default tab)
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Department() {
     setActiveTab(tabId);
   }
 
-  function clearLocal(){
+  function clearLocal() {
     localStorage.removeItem("selectedDepartment");
   }
 
@@ -30,11 +30,12 @@ export default function Department() {
     <>
       <Bcrumbs breadcrumbspage="Departments" />
       <section id="departments" className="departments">
+        <Sectionhead
+          sectionname="Departments"
+          sectiondescription="Centres Of "
+          sectiondescriptionbold="Excellence"
+        />
         <div className="container">
-          <div className="section-title">
-            <h2>Our Departments</h2>
-          </div>
-
           <div className="row">
             <div className="col-lg-3 mb-5 mb-lg-0">
               <ul className="nav nav-tabs flex-column">
@@ -66,7 +67,6 @@ export default function Department() {
                   </a>
                 </li>
                 <li className="nav-item mt-2">
-                 
                   <a
                     className={`nav-link ${
                       activeTab === "tab-3" ? "active" : ""
@@ -79,7 +79,6 @@ export default function Department() {
                   </a>
                 </li>
                 <li className="nav-item mt-2">
-                  
                   <a
                     className={`nav-link ${
                       activeTab === "tab-4" ? "active" : ""
@@ -92,7 +91,6 @@ export default function Department() {
                   </a>
                 </li>
                 <li className="nav-item mt-2">
-                  
                   <a
                     className={`nav-link ${
                       activeTab === "tab-5" ? "active" : ""
@@ -105,7 +103,6 @@ export default function Department() {
                   </a>
                 </li>
                 <li className="nav-item mt-2">
-                 
                   <a
                     className={`nav-link ${
                       activeTab === "tab-6" ? "active" : ""
@@ -145,7 +142,12 @@ export default function Department() {
             </div>
             <div className="col-lg-9">
               <div className="tab-content">
-                <div className={`tab-pane ${activeTab === 'tab-1' ? 'active show' : ''}`} id="tab-1">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-1" ? "active show" : ""
+                  }`}
+                  id="tab-1"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/general-medicine-banner.jpg"
@@ -217,7 +219,12 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className={`tab-pane ${activeTab === 'tab-2' ? 'active show' : ''}`} id="tab-2">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-2" ? "active show" : ""
+                  }`}
+                  id="tab-2"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/cardiology-banner.jpeg.jpg"
@@ -257,7 +264,12 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className={`tab-pane ${activeTab === 'tab-3' ? 'active show' : ''}`} id="tab-3">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-3" ? "active show" : ""
+                  }`}
+                  id="tab-3"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/pediatrics-banner.jpg"
@@ -301,7 +313,12 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className={`tab-pane ${activeTab === 'tab-4' ? 'active show' : ''}`} id="tab-4">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-4" ? "active show" : ""
+                  }`}
+                  id="tab-4"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/orthopedic-banner.jpg"
@@ -340,7 +357,12 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className={`tab-pane ${activeTab === 'tab-5' ? 'active show' : ''}`} id="tab-5">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-5" ? "active show" : ""
+                  }`}
+                  id="tab-5"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/nephrology-banner.jpg"
@@ -410,7 +432,12 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className={`tab-pane ${activeTab === 'tab-6' ? 'active show' : ''}`} id="tab-6">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-6" ? "active show" : ""
+                  }`}
+                  id="tab-6"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/ent-banner.jpg"
@@ -456,7 +483,12 @@ export default function Department() {
                   </div>
                 </div>
 
-                <div className={`tab-pane ${activeTab === 'tab-7' ? 'active show' : ''}`} id="tab-7">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-7" ? "active show" : ""
+                  }`}
+                  id="tab-7"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/emergency-medicine-banner.png"
@@ -520,7 +552,12 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div className={`tab-pane ${activeTab === 'tab-8' ? 'active show' : ''}`} id="tab-8">
+                <div
+                  className={`tab-pane ${
+                    activeTab === "tab-8" ? "active show" : ""
+                  }`}
+                  id="tab-8"
+                >
                   <div className="department-img">
                     <img
                       src="assets/img/departments/palliative-banner.jpg"

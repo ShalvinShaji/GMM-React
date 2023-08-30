@@ -8,7 +8,11 @@ export default function Careers() {
     <>
       <Bcrumbs breadcrumbspage="Careers" />
       <section className="Careers" id="Careers">
-        <Sectionhead sectionname="Careers" />
+        <Sectionhead
+          sectionname="Careers"
+          sectiondescription="Explore Healthcare "
+          sectiondescriptionbold="Careers"
+        />
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 g-2 p-3 m-0">

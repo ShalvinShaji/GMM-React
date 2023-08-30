@@ -8,7 +8,11 @@ export default function Governingboard() {
     <>
       <Bcrumbs breadcrumbspage="Governing Board" />
       <section className="Governingboard" id="Governingboard">
-        <Sectionhead sectionname="Governing Board" />
+        <Sectionhead
+          sectionname="Governing Board"
+          sectiondescription="Our"
+          sectiondescriptionbold="Board of directors"
+        />
         <div className="container">
           <div className="row">
             <div className="col-12">

@@ -8,7 +8,11 @@ export default function Doctors() {
     <>
       <Bcrumbs breadcrumbspage="Doctors" />
       <section className="Doctors" id="Doctors">
-        <Sectionhead sectionname="Our Doctors" />
+        <Sectionhead
+          sectionname="Doctors"
+          sectiondescription="Our"
+          sectiondescriptionbold="Doctors"
+        />
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-lg-4 col-xl-3 ">
@@ -21,7 +25,7 @@ export default function Doctors() {
                   />
                 </div>
                 <div className="member-info text-center">
-                  <h4>Dr K. A Chacko</h4> 
+                  <h4>Dr K. A Chacko</h4>
                   <h4>Chief Medical Officer</h4>
                   <span>(MBBS, FCAMS)</span>
                 </div>

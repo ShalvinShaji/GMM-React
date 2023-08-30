@@ -4,12 +4,11 @@ import Sectionhead from "../components/Sectionhead";
 import "../css/Contact.css";
 
 export default function Contact() {
-
-  const initialFormData={
+  const initialFormData = {
     name: "",
     email: "",
     message: "",
-  }
+  };
 
   const [formData, setFormData] = useState(initialFormData);
 
@@ -25,14 +24,18 @@ export default function Contact() {
     e.preventDefault();
     // Here you can handle the form submission, for example:
     console.log(formData);
-    setFormData(initialFormData)
+    setFormData(initialFormData);
   };
 
   return (
     <>
       <Bcrumbs breadcrumbspage="Contact" />
       <section className="Contact" id="Contact">
-        <Sectionhead sectionname="Contact" />
+        <Sectionhead
+          sectionname="Contact"
+          sectiondescription="Get in Touch"
+          sectiondescriptionbold="with us"
+        />
         <div className="container">
           <iframe
             width="100%"
