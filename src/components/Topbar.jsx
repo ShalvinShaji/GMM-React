@@ -16,7 +16,7 @@ export default function Topbar() {
             <span className="me-2"> gmmhospital@gmail.com</span>
           </div>
           <div className="make-appointment border-end-0">
-            <i class="bx bxs-calendar-check"></i>
+            <i className="bx bxs-calendar-check"></i>
             <Link
               to="/Appointment"
               className="cta-appointment text-center me-2"
