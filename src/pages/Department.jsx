@@ -168,16 +168,14 @@ export default function Department() {
                     </p>
                   </div>
 
-                  <div className="row d-flex  align-items-center justify-content-lg-start mx-auto">
-                    <div className="doc col-md-5 ">
-                      <div className="pic">
-                        <img
-                          src="assets/img/doctors/no-image.jpg"
-                          className="img-fluid mb-3"
-                          alt=""
-                        />
-                      </div>
-                      <div className="doc-info text-center d-flex flex-column  align-items-center justify-content-center">
+                  <div className="department-doctors d-flex align-items-center justify-content-center justify-content-lg-start row g-2">
+                    <div className="doc col-md-6   d-flex flex-column flex-xl-row align-items-center justify-content-center">
+                      <img
+                        src="https://heronavbar.netlify.app/assets/img/doctors/DrPhiliposejohn.jpeg"
+                        className="img-fluid m-3"
+                        alt=""
+                      />
+                      <div className="doc-info text-center d-flex flex-column  align-items-center justify-content-center m-3">
                         <h4>Dr N Damodaran</h4>
                         <h4>(MBBS, MD)</h4>
                         <span>Chief Physician</span>
@@ -185,36 +183,32 @@ export default function Department() {
                         <p>6.00 PM- 9.00 PM</p>
                       </div>
                     </div>
-                    <div className="doc col-md-5 ">
-                      <div className="pic">
-                        <img
-                          src="assets/img/doctors/DrKaChacko.jpg"
-                          className="img-fluid mb-3"
-                          alt=""
-                        />
-                      </div>
-                      <div className="doc-info text-center d-flex flex-column  align-items-center justify-content-center">
-                        <h4>Dr K. A Chacko</h4>
-                        <h4>(MBBS, FCAMS)</h4>
-                        <span>Physician</span>
-                        <p>OP Timings: Monday, Wednesday, Friday</p>
-                        <p>9AM- 12.30PM</p>
+                    <div className="doc col-md-6  d-flex flex-column flex-xl-row align-items-center justify-content-center">
+                      <img
+                        src="https://heronavbar.netlify.app/assets/img/doctors/DrPhiliposejohn.jpeg"
+                        className="img-fluid m-3"
+                        alt=""
+                      />
+                      <div className="doc-info text-center d-flex flex-column  align-items-center justify-content-center m-3">
+                        <h4>Dr N Damodaran</h4>
+                        <h4>(MBBS, MD)</h4>
+                        <span>Chief Physician</span>
+                        <p>OP Timings: Monday- Saturday</p>
+                        <p>6.00 PM- 9.00 PM</p>
                       </div>
                     </div>
-                    <div className="doc col-md-5 ">
-                      <div className="pic">
-                        <img
-                          src="assets/img/doctors/DrBinoyGRussel.jpg"
-                          className="img-fluid mb-3"
-                          alt=""
-                        />
-                      </div>
-                      <div className="doc-info text-center d-flex flex-column  align-items-center justify-content-center">
-                        <h4>Dr Binoy G Russel</h4>
-                        <h4>(MBBS, FCAMS)</h4>
-                        <span>Physician</span>
-                        <p>OP Timings: Tuesday, Thursday</p>
-                        <p>10AM- 1.00PM</p>
+                    <div className="doc col-md-6   d-flex flex-column flex-xl-row align-items-center justify-content-center">
+                      <img
+                        src="https://heronavbar.netlify.app/assets/img/doctors/DrPhiliposejohn.jpeg"
+                        className="img-fluid m-3"
+                        alt=""
+                      />
+                      <div className="doc-info text-center d-flex flex-column  align-items-center justify-content-center m-3">
+                        <h4>Dr N Damodaran</h4>
+                        <h4>(MBBS, MD)</h4>
+                        <span>Chief Physician</span>
+                        <p>OP Timings: Monday- Saturday</p>
+                        <p>6.00 PM- 9.00 PM</p>
                       </div>
                     </div>
                   </div>

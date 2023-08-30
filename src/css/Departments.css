@@ -84,58 +84,41 @@
   margin-bottom: var(--mb-3);
 }
 
-.departments .doc {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 15px;
-  margin-right: 25px;
-  margin-bottom: var(--mb-3);
-  padding: 10px;
-  box-shadow: 0px 2px 15px rgba(155, 154, 154, 0.455);
-}
-
-.departments .doc-info {
-  padding: var(--mb-2);
-  width: 300px;
+.departments .department-doctors {
+  /* box-shadow: 0px 1px 15px #fa9d9d26; */
+  border-radius: 10px;
 }
 
 .departments .doc-info p {
   margin: 0;
 }
 
-.departments .doc:hover {
-  box-shadow: 0px 2px 15px rgba(49, 47, 47, 0.149);
+.departments .doc {
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 1px 15px #b3b3b36d;
+  width: 410px;
+  margin: 15px;
 }
 
-.departments .doc .pic {
-  overflow: hidden;
-  width: 180px;
-  height: 220px;
-  object-fit: cover !important;
-  display: flex;
-  justify-content: center !important;
-}
-
-.departments .doc .pic img {
+.departments .doc img {
   transition: ease-in-out 0.3s;
   width: 160px;
   height: 190px;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 12px;
 }
 
 .departments .doc h4 {
   margin-bottom: 5px;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   /* color: #2c4964; */
 }
 
 .departments .doc span {
   display: block;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
   font-weight: 600;
   color: #3e3e3e;
@@ -156,20 +139,9 @@
   color: white;
 }
 
-/* .doctors .doc span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #b2c8dd;
-  bottom: 0;
-  left: 0;
-} */
-
 .departments .doc p {
   margin: 10px 0 0 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 @media (max-width: 768px) {
@@ -179,15 +151,13 @@
     max-width: 100%;
   } */
 
-
-  .departments .tab-pane .department-img img{
+  .departments .tab-pane .department-img img {
     height: 185px;
   }
 
   .departments .doc {
     display: flex;
     flex-direction: column !important;
-    padding: 40px;
   }
 
   .departments .doc-info {
