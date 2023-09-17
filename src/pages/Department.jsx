@@ -6,7 +6,6 @@ import "../css/Departments.css";
 
 export default function Department() {
   const [activeTab, setActiveTab] = useState("general-medicine");
-
   const location = useLocation();
 
   useEffect(() => {
@@ -14,7 +13,6 @@ export default function Department() {
     const selectedDepartment = params.get("tab");
 
     if (selectedDepartment) {
-      // Set the active tab based on the selected department parameter
       setActiveTab(selectedDepartment);
     }
   }, [location.search]);

@@ -97,8 +97,10 @@
   transition-duration: 0.4s;
   border-radius: 10px;
   box-shadow: 0px 1px 15px #b3b3b36d;
-  width: 410px;
+  width: 450px;
   margin: 15px;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
 }
 
 .departments .doc img {
