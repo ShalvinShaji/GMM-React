@@ -48,7 +48,6 @@ const Navbar = () => {
               id="navbarDropdown"
               role="button"
               aria-expanded="false"
-              data-bs-toggle="dropdown"
             >
               About
             </a>
