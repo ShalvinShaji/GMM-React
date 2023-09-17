@@ -1,30 +1,23 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Bcrumbs from "../components/Bcrumbs";
 import Sectionhead from "../components/Sectionhead";
 import "../css/Departments.css";
 
 export default function Department() {
-  const [activeTab, setActiveTab] = useState("tab-1"); // Default to the first tab (you can set any default tab)
+  const [activeTab, setActiveTab] = useState("general-medicine");
+
+  const location = useLocation();
 
   useEffect(() => {
-    // Get the selected department from localStorage
-    const selectedDepartment = localStorage.getItem("selectedDepartment");
+    const params = new URLSearchParams(location.search);
+    const selectedDepartment = params.get("tab");
 
     if (selectedDepartment) {
-      // Handle the selected department and set the active tab
-      handleTabSwitch(selectedDepartment);
-      clearLocal();
+      // Set the active tab based on the selected department parameter
+      setActiveTab(selectedDepartment);
     }
-  }, []);
-
-  function handleTabSwitch(tabId) {
-    // Set the active tab based on the selected department
-    setActiveTab(tabId);
-  }
-
-  function clearLocal() {
-    localStorage.removeItem("selectedDepartment");
-  }
+  }, [location.search]);
 
   return (
     <>
@@ -45,11 +38,11 @@ export default function Department() {
                 <li className="nav-item">
                   <a
                     className={`nav-link ${
-                      activeTab === "tab-1" ? "active" : ""
+                      activeTab === "general-medicine" ? "active" : ""
                     }`}
                     data-bs-toggle="tab"
-                    href="#tab-1"
-                    onClick={() => handleTabSwitch("tab-1")}
+                    href="#general-medicine"
+                    onClick={() => handleTabSwitch("general-medicine")}
                   >
                     <p>General Medicine</p>
                   </a>
@@ -57,11 +50,11 @@ export default function Department() {
                 <li className="nav-item mt-2">
                   <a
                     className={`nav-link ${
-                      activeTab === "tab-2" ? "active" : ""
+                      activeTab === "cardiology" ? "active" : ""
                     }`}
                     data-bs-toggle="tab"
-                    href="#tab-2"
-                    onClick={() => handleTabSwitch("tab-2")}
+                    href="#cardiology"
+                    onClick={() => handleTabSwitch("cardiology")}
                   >
                     <p>Cardiology</p>
                   </a>
@@ -69,11 +62,11 @@ export default function Department() {
                 <li className="nav-item mt-2">
                   <a
                     className={`nav-link ${
-                      activeTab === "tab-3" ? "active" : ""
+                      activeTab === "pediatrics" ? "active" : ""
                     }`}
                     data-bs-toggle="tab"
-                    href="#tab-3"
-                    onClick={() => handleTabSwitch("tab-3")}
+                    href="#pediatrics"
+                    onClick={() => handleTabSwitch("pediatrics")}
                   >
                     <p>Pediatrics</p>
                   </a>
@@ -81,11 +74,11 @@ export default function Department() {
                 <li className="nav-item mt-2">
                   <a
                     className={`nav-link ${
-                      activeTab === "tab-4" ? "active" : ""
+                      activeTab === "orthopedics" ? "active" : ""
                     }`}
                     data-bs-toggle="tab"
-                    href="#tab-4"
-                    onClick={() => handleTabSwitch("tab-4")}
+                    href="#orthopedics"
+                    onClick={() => handleTabSwitch("orthopedics")}
                   >
                     <p>Orthopedics</p>
                   </a>
@@ -93,11 +86,11 @@ export default function Department() {
                 <li className="nav-item mt-2">
                   <a
                     className={`nav-link ${
-                      activeTab === "tab-5" ? "active" : ""
+                      activeTab === "nephrology" ? "active" : ""
                     }`}
                     data-bs-toggle="tab"
-                    href="#tab-5"
-                    onClick={() => handleTabSwitch("tab-5")}
+                    href="#nephrology"
+                    onClick={() => handleTabSwitch("nephrology")}
                   >
                     <p>Nephrology</p>
                   </a>
@@ -105,23 +98,11 @@ export default function Department() {
                 <li className="nav-item mt-2">
                   <a
                     className={`nav-link ${
-                      activeTab === "tab-6" ? "active" : ""
+                      activeTab === "emergency-medicine" ? "active" : ""
                     }`}
                     data-bs-toggle="tab"
-                    href="#tab-6"
-                    onClick={() => handleTabSwitch("tab-6")}
-                  >
-                    <p>ENT</p>
-                  </a>
-                </li>
-                <li className="nav-item mt-2">
-                  <a
-                    className={`nav-link ${
-                      activeTab === "tab-7" ? "active" : ""
-                    }`}
-                    data-bs-toggle="tab"
-                    href="#tab-7"
-                    onClick={() => handleTabSwitch("tab-7")}
+                    href="#emergency-medicine"
+                    onClick={() => handleTabSwitch("emergency-medicine")}
                   >
                     <p>Emergency Medicine</p>
                   </a>
@@ -129,11 +110,15 @@ export default function Department() {
                 <li className="nav-item mt-2">
                   <a
                     className={`nav-link ${
-                      activeTab === "tab-8" ? "active" : ""
+                      activeTab === "home-care service-palliative-care"
+                        ? "active"
+                        : ""
                     }`}
                     data-bs-toggle="tab"
-                    href="#tab-8"
-                    onClick={() => handleTabSwitch("tab-8")}
+                    href="#home-care service-palliative-care"
+                    onClick={() =>
+                      handleTabSwitch("home-care service-palliative-care")
+                    }
                   >
                     <p>Home care service & Palliative Care</p>
                   </a>
@@ -144,9 +129,9 @@ export default function Department() {
               <div className="tab-content">
                 <div
                   className={`tab-pane ${
-                    activeTab === "tab-1" ? "active show" : ""
+                    activeTab === "general-medicine" ? "active show" : ""
                   }`}
-                  id="tab-1"
+                  id="general-medicine"
                 >
                   <div className="department-img">
                     <img
@@ -215,9 +200,9 @@ export default function Department() {
                 </div>
                 <div
                   className={`tab-pane ${
-                    activeTab === "tab-2" ? "active show" : ""
+                    activeTab === "cardiology" ? "active show" : ""
                   }`}
-                  id="tab-2"
+                  id="cardiology"
                 >
                   <div className="department-img">
                     <img
@@ -260,9 +245,9 @@ export default function Department() {
                 </div>
                 <div
                   className={`tab-pane ${
-                    activeTab === "tab-3" ? "active show" : ""
+                    activeTab === "pediatrics" ? "active show" : ""
                   }`}
-                  id="tab-3"
+                  id="pediatrics"
                 >
                   <div className="department-img">
                     <img
@@ -309,9 +294,9 @@ export default function Department() {
                 </div>
                 <div
                   className={`tab-pane ${
-                    activeTab === "tab-4" ? "active show" : ""
+                    activeTab === "orthopedics" ? "active show" : ""
                   }`}
-                  id="tab-4"
+                  id="orthopedics"
                 >
                   <div className="department-img">
                     <img
@@ -353,9 +338,9 @@ export default function Department() {
                 </div>
                 <div
                   className={`tab-pane ${
-                    activeTab === "tab-5" ? "active show" : ""
+                    activeTab === "nephrology" ? "active show" : ""
                   }`}
-                  id="tab-5"
+                  id="nephrology"
                 >
                   <div className="department-img">
                     <img
@@ -426,62 +411,12 @@ export default function Department() {
                     </div>
                   </div>
                 </div>
-                <div
-                  className={`tab-pane ${
-                    activeTab === "tab-6" ? "active show" : ""
-                  }`}
-                  id="tab-6"
-                >
-                  <div className="department-img">
-                    <img
-                      src="assets/img/departments/ent-banner.jpg"
-                      alt=""
-                      className="img-fluid"
-                    />
-                  </div>
-                  <div className="department-heading my-4">
-                    <h3>ENT</h3>
-                  </div>
-
-                  <div className="department-description mb-4">
-                    <p>
-                      Medical specialty which provides treatment to diseases
-                      related to Ear, Nose, and Throat. We provide OPD based
-                      care.
-                    </p>
-                    <p className="text-capitalize">services:</p>
-                    <ul>
-                      <li>Ear washing</li>
-                      <li>Ear suctioning</li>
-                      <li>Vertigo Clinic</li>
-                    </ul>
-                  </div>
-
-                  <div className="row d-flex  align-items-center mx-auto">
-                    <div className="doc col-md-5 ">
-                      <div className="pic">
-                        <img
-                          src="assets/img/doctors/DrKiranBabu.jpg"
-                          className="img-fluid mb-3"
-                          alt=""
-                        />
-                      </div>
-                      <div className="doc-info text-center d-flex flex-column  align-items-center justify-content-center">
-                        <h4>Dr Kiran Babu </h4>
-                        <h4>(MBBS, MS)</h4>
-                        <span>ENT Surgeon</span>
-                        <p>OP Timings: Tuesday, Friday</p>
-                        <p>4.00PM- 6.00PM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <div
                   className={`tab-pane ${
-                    activeTab === "tab-7" ? "active show" : ""
+                    activeTab === "emergency-medicine" ? "active show" : ""
                   }`}
-                  id="tab-7"
+                  id="emergency-medicine"
                 >
                   <div className="department-img">
                     <img
@@ -548,9 +483,11 @@ export default function Department() {
                 </div>
                 <div
                   className={`tab-pane ${
-                    activeTab === "tab-8" ? "active show" : ""
+                    activeTab === "home-care service-palliative-care"
+                      ? "active show"
+                      : ""
                   }`}
-                  id="tab-8"
+                  id="home-care service-palliative-care"
                 >
                   <div className="department-img">
                     <img

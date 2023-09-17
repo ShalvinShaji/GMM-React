@@ -3,14 +3,6 @@ import { Link } from "react-router-dom";
 import "../css/Footer.css";
 
 export default function Footer() {
-  const handleDepartmentClick = (department) => {
-    localStorage.setItem("selectedDepartment", department);
-    if (location.pathname === "/Departments") {
-      handleTabSwitch(department); // Set the active tab directly if on department page
-    }
-  };
-
-  
   return (
     <>
       <div className="footer d-flex align-items-center">
@@ -77,12 +69,11 @@ export default function Footer() {
             </div>
             <div className="col-lg-3 col-md-6 mb-2 mb-lg-0 footer-links d-flex flex-column align-items-lg-center">
               <ul>
-              <h4 className="text-uppercase ">Our Departments</h4>
+                <h4 className="text-uppercase ">Our Departments</h4>
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/Departments"
-                    onClick={() => handleDepartmentClick("tab-1")}
+                    to="/Departments?tab=general-medicine"
                     className="text-uppercase"
                   >
                     General Medicine
@@ -91,8 +82,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/Departments"
-                    onClick={() => handleDepartmentClick("tab-2")}
+                    to="/Departments?tab=cardiology"
                     className="text-uppercase"
                   >
                     Cardiology
@@ -101,8 +91,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/Departments"
-                    onClick={() => handleDepartmentClick("tab-4")}
+                    to="/Departments?tab=orthopedics"
                     className="text-uppercase"
                   >
                     Orthopedics
@@ -111,8 +100,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/Departments"
-                    onClick={() => handleDepartmentClick("tab-3")}
+                    to="/Departments?tab=pediatrics"
                     className="text-uppercase"
                   >
                     Pediatrics
@@ -121,8 +109,7 @@ export default function Footer() {
                 <li>
                   <i className="bx bx-chevrons-right"></i>{" "}
                   <Link
-                    to="/Departments"
-                    onClick={() => handleDepartmentClick("tab-5")}
+                    to="/Departments?tab=nephrology"
                     className="text-uppercase"
                   >
                     Nephrology
@@ -157,8 +144,24 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-credits d-flex flex-column flex-lg-row">
-        <div className="col-lg-6 copyright d-flex justify-content-center"><small>&copy; Copyright <strong><span>gmmhospital</span></strong>. All Rights Reserved</small></div>
-        <div className="col-lg-6 credits d-flex justify-content-center"><small> Designed by <a className="credit-azaic" href="#">AZAIC TECH LLP</a> </small></div>
+        <div className="col-lg-6 copyright d-flex justify-content-center">
+          <small>
+            &copy; Copyright{" "}
+            <strong>
+              <span>gmmhospital</span>
+            </strong>
+            . All Rights Reserved
+          </small>
+        </div>
+        <div className="col-lg-6 credits d-flex justify-content-center">
+          <small>
+            {" "}
+            Designed by{" "}
+            <a className="credit-azaic" href="#">
+              AZAIC TECH LLP
+            </a>{" "}
+          </small>
+        </div>
       </div>
     </>
   );
