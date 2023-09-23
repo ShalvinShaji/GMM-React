@@ -40,7 +40,6 @@ export default function Department() {
                     }`}
                     data-bs-toggle="tab"
                     href="#general-medicine"
-                    onClick={() => handleTabSwitch("general-medicine")}
                   >
                     <p>General Medicine</p>
                   </a>
@@ -52,7 +51,6 @@ export default function Department() {
                     }`}
                     data-bs-toggle="tab"
                     href="#cardiology"
-                    onClick={() => handleTabSwitch("cardiology")}
                   >
                     <p>Cardiology</p>
                   </a>
@@ -64,7 +62,6 @@ export default function Department() {
                     }`}
                     data-bs-toggle="tab"
                     href="#pediatrics"
-                    onClick={() => handleTabSwitch("pediatrics")}
                   >
                     <p>Pediatrics</p>
                   </a>
@@ -76,7 +73,6 @@ export default function Department() {
                     }`}
                     data-bs-toggle="tab"
                     href="#orthopedics"
-                    onClick={() => handleTabSwitch("orthopedics")}
                   >
                     <p>Orthopedics</p>
                   </a>
@@ -88,7 +84,6 @@ export default function Department() {
                     }`}
                     data-bs-toggle="tab"
                     href="#nephrology"
-                    onClick={() => handleTabSwitch("nephrology")}
                   >
                     <p>Nephrology</p>
                   </a>
@@ -100,7 +95,6 @@ export default function Department() {
                     }`}
                     data-bs-toggle="tab"
                     href="#emergency-medicine"
-                    onClick={() => handleTabSwitch("emergency-medicine")}
                   >
                     <p>Emergency Medicine</p>
                   </a>
@@ -114,9 +108,6 @@ export default function Department() {
                     }`}
                     data-bs-toggle="tab"
                     href="#home-care service-palliative-care"
-                    onClick={() =>
-                      handleTabSwitch("home-care service-palliative-care")
-                    }
                   >
                     <p>Home care service & Palliative Care</p>
                   </a>
