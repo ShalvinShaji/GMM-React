@@ -97,10 +97,6 @@
   transition-duration: 0.4s;
   border-radius: 10px;
   box-shadow: 0px 1px 15px #b3b3b36d;
-  width: 450px;
-  margin: 15px;
-  margin-left: 0 !important;
-  margin-top: 0 !important;
 }
 
 .departments .doc img {
@@ -112,7 +108,7 @@
 }
 
 .departments .doc h4 {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-weight: 700;
   font-size: 14px;
   /* color: #2c4964; */
@@ -122,7 +118,7 @@
   display: block;
   font-size: 14px;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
   color: #3e3e3e;
 }
 
@@ -142,8 +138,8 @@
 }
 
 .departments .doc p {
-  margin: 10px 0 0 0;
   font-size: 13px;
+  margin-top: 3px;
 }
 
 @media (max-width: 768px) {
