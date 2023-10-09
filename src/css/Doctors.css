@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .Doctors .member {
-  box-shadow: 0px 2px 15px rgba(33, 27, 28, 0.085) !important;
+  box-shadow: 0px 2px 15px #27222333 !important;
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 20px;
