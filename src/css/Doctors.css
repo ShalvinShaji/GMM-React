@@ -1,47 +1,44 @@
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
-  
-  .Doctors .member {
-    box-shadow: 0px 2px 15px rgba(33, 27, 28, 0.085) !important;
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition-duration: 0.3s;
-  }
-  
-  .Doctors .member .pic img {
-    border-radius: 10px !important;
-    width: 180px !important;
-    height: 220px !important;
-    object-fit: cover !important;
-  }
-  
-  .Doctors .member h4 {
-    margin-top: 4px;
-    font-weight: 700;
-    font-size: 14px !important;
-    font-size: var(--name-font-size);
-    color: #2c4964;
-  }
-  
-  .Doctors .member-info {
-    margin-top: var(--mb-1);
-  }
-  
-  .Doctors .member span {
-    display: block;
-    font-size: 14px !important;
-    font-size: var(--normal-font-size);
-    padding-bottom: 10px;
-    position: relative;
-    font-weight: 500;
-  }
-  
 
-  
-  .Doctors .member p {
-    margin: 10px 0 0 0;
-    /* font-size: 14px; */
-  }
-  
+.Doctors .member {
+  box-shadow: 0px 2px 15px rgba(33, 27, 28, 0.085) !important;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition-duration: 0.3s;
+}
+
+.Doctors .member .pic img {
+  border-radius: 10px !important;
+  width: 180px !important;
+  height: 220px !important;
+  object-fit: cover !important;
+}
+
+.Doctors .member h4 {
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 14px !important;
+  font-size: var(--name-font-size);
+  color: #2c4964;
+}
+
+.Doctors .member-info {
+  margin-top: var(--mb-1);
+}
+
+.Doctors .member span {
+  display: block;
+  font-size: 12px !important;
+  font-size: var(--normal-font-size);
+  position: relative;
+  font-weight: 500;
+  color: #2c4964;
+}
+
+.Doctors .member p {
+  margin: 10px 0 0 0;
+  /* font-size: 14px; */
+}
