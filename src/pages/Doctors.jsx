@@ -77,7 +77,7 @@ export default function Doctors() {
                   <div className="member-info text-center">
                     <h4>{doctor.name}</h4>
                     <span>{doctor.qualifications}</span>
-                    <h4>{doctor.role}</h4>
+                    <span>{doctor.role}</span>
                   </div>
                 </div>
               </div>
