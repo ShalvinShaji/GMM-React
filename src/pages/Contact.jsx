@@ -69,7 +69,7 @@ export default function Contact() {
               <h4 className=" my-5 my-lg-3">Share your feedback with us:</h4>
 
               <form
-                action="forms/contact.php"
+                // action="forms/contact.php"
                 method="post"
                 role="form"
                 className="php-email-form"

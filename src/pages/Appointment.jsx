@@ -14,12 +14,37 @@ function Appointment() {
   };
   const [formData, setFormData] = useState(initialFormData);
 
+  const departmentsData = [
+    {
+      name: "Cardiology",
+      doctors: ["Manu", "Vinu"],
+    },
+    {
+      name: "Nephrology",
+      doctors: ["Kiran", "Devi"],
+    },
+    {
+      name: "Orthopedics",
+      doctors: ["Joseph"],
+    },
+  ];
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
+
+    // If the selected department changes, reset the doctor field
+    if (name === "department") {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        doctor: "",
+        [name]: value,
+      }));
+    } else {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        [name]: value,
+      }));
+    }
   };
 
   const handleSubmit = (e) => {
@@ -120,30 +145,11 @@ function Appointment() {
                   required
                 >
                   <option value="">Select Department</option>
-                  <option value="General medicine" className="text-capitalize">
-                    General medicine
-                  </option>
-                  <option value="Cardiology" className="text-capitalize">
-                    Cardiology
-                  </option>
-                  <option value="Pediatrics" className="text-capitalize">
-                    Pediatrics
-                  </option>
-                  <option value="Orthopedics" className="text-capitalize">
-                    Orthopedics
-                  </option>
-                  <option value="Nephrology" className="text-capitalize">
-                    Nephrology
-                  </option>
-                  <option value="ENT" className="text-capitalize">
-                    ENT
-                  </option>
-                  <option
-                    value="Home Care Service and Palliative service"
-                    className="text-capitalize"
-                  >
-                    Home Care Service and Palliative service
-                  </option>
+                  {departmentsData.map((department) => (
+                    <option key={department.name} value={department.name}>
+                      {department.name}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="col-md-4 form-group mt-3">
@@ -156,45 +162,14 @@ function Appointment() {
                   required
                 >
                   <option value="">Select Doctor</option>
-                  <option value="Dr K. A Chacko" className="text-capitalize">
-                    Dr K. A Chacko
-                  </option>
-                  <option value="Dr N Damodaran" className="text-capitalize">
-                    Dr N Damodaran
-                  </option>
-                  <option value="Dr Binoy G Russel" className="text-capitalize">
-                    Dr Binoy G Russel
-                  </option>
-                  <option
-                    value="Dr Sunnychen Devasia"
-                    className="text-capitalize"
-                  >
-                    Dr Sunnychen Devasia
-                  </option>
-                  <option
-                    value="Dr Varkey S Kulangara"
-                    className="text-capitalize"
-                  >
-                    Dr Varkey S Kulangara
-                  </option>
-                  <option value="Dr Kiran Babu" className="text-capitalize">
-                    Dr Kiran Babu
-                  </option>
-                  <option value="Dr Sneha Anna Joy" className="text-capitalize">
-                    Dr Sneha Anna Joy
-                  </option>
-                  <option
-                    value="Dr Rohan Chacko Jacob"
-                    className="text-capitalize"
-                  >
-                    Dr Rohan Chacko Jacob
-                  </option>
-                  <option value="Dr Sara Jacob" className="text-capitalize">
-                    Dr Sara Jacob
-                  </option>
-                  <option value="Dr Midhun Raj" className="text-capitalize">
-                    Dr Midhun Raj
-                  </option>
+                  {formData.department &&
+                    departmentsData
+                      .find((dept) => dept.name === formData.department)
+                      .doctors.map((doctor) => (
+                        <option key={doctor} value={doctor}>
+                          {doctor}
+                        </option>
+                      ))}
                 </select>
               </div>
             </div>
