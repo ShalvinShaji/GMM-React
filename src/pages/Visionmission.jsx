@@ -15,11 +15,11 @@ export default function Visionmission() {
         />
         <div className="container">
           <div className="row">
-            <div className="col-lg-5">
+            <div className="col-lg-5 VisionmissionImage">
               <img
-                src="./assets/img/carousel-images/about.jpg"
-                alt=""
-                className="h-100 w-100 rounded"
+                src="https://heeranew.netlify.app/assets/img/carousel-images/about.jpg"
+                alt="VisionmissionImage"
+                className="img-fluid rounded"
               />
             </div>
             <div className="col-lg-7 d-flex flex-column justify-content-around align-items-baseline">

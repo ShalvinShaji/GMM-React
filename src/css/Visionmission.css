@@ -1,9 +1,15 @@
-.vision-mission-box p{
-    text-align: justify !important;
+.vision-mission-box p {
+  text-align: justify !important;
 }
 
-.vision-mission-box h3{
-    font-size: 18px !important;
-    text-transform: uppercase;
-    font-weight: 600;
+.vision-mission-box h3 {
+  font-size: 18px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.VisionmissionImage {
+  object-fit: cover !important;
+  height: 200px !important;
+  width: 450px !important;
 }

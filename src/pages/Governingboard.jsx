@@ -4,6 +4,35 @@ import Sectionhead from "../components/Sectionhead";
 import "../css/Governingboard.css";
 
 export default function Governingboard() {
+  const governingBoardMembers = [
+    {
+      id: 1,
+      position: "Patron",
+      name: "Rt Rev Dr. Malayil Sabu Koshy Cherian",
+    },
+    {
+      id: 2,
+      position: "Patron",
+      name: "Rt Rev Dr. Malayil Sabu Koshy Cherian",
+    },
+    {
+      id: 3,
+      position: "Patron",
+      name: "Rt Rev Dr. Malayil Sabu Koshy Cherian",
+    },
+    {
+      id: 4,
+      position: "Patron",
+      name: "Rt Rev Dr. Malayil Sabu Koshy Cherian",
+    },
+    {
+      id: 5,
+      position: "Patron",
+      name: "Rt Rev Dr. Malayil Sabu Koshy Cherian",
+    },
+    // Add more members as needed
+  ];
+
   return (
     <>
       <Bcrumbs breadcrumbspage="Governing Board" />
@@ -27,14 +56,16 @@ export default function Governingboard() {
             </div>
           </div>
           <div className="row my-4">
-            <div className="col-md-6 col-lg-4 col-xl-3 ">
-              <div className="member d-flex flex-column align-items-center justify-content-center">
-                <div className="member-info text-center">
-                  <span>Patron</span>
-                  <h4>Rt Rev Dr. Malayil Sabu Koshy Cherian</h4>
+            {governingBoardMembers.map((member) => (
+              <div key={member.id} className="col-md-6 col-lg-4 col-xl-3">
+                <div className="member d-flex flex-column align-items-center justify-content-center">
+                  <div className="member-info text-center">
+                    <span>{member.position}</span>
+                    <h4>{member.name}</h4>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
