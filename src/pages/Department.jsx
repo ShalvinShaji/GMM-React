@@ -21,7 +21,8 @@ export default function Department() {
     {
       id: "general-medicine",
       name: "General Medicine",
-      bannerImage: "assets/img/departments/general-medicine-banner.jpg",
+      bannerImage:
+        "https://gmmhospital.in/assets/img/carousel-images/carousel-bg-1.jpg",
       description:
         "The department of general medicine deals with the prevention, diagnosis, and treatment of adult diseases. With experienced doctors in the field, the department provides the best possible primary care.",
       doctors: [
@@ -31,7 +32,7 @@ export default function Department() {
           role: "Chief Physician",
           opTimings: "Monday- Saturday, 6.00 PM- 9.00 PM",
           image:
-            "https://heronavbar.netlify.app/assets/img/doctors/DrPhiliposejohn.jpeg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         // Add more doctors as needed
       ],
@@ -39,7 +40,8 @@ export default function Department() {
     {
       id: "cardiology",
       name: "Cardiology",
-      bannerImage: "assets/img/departments/cardiology-banner.jpeg.jpg",
+      bannerImage:
+        "https://gmmhospital.in/assets/img/carousel-images/carousel-bg-1.jpg",
       description:
         "The department of cardiology diagnoses and provides treatment for disorders related to the heart and cardiovascular system. We provide OPD based care for our patients.",
       doctors: [
@@ -48,7 +50,8 @@ export default function Department() {
           qualifications: "MBBS, MD, DM",
           role: "Cardiologist",
           opTimings: "Saturday, 12.00 PM – 1.00 PM",
-          image: "assets/img/doctors/DrPhiliposejohn.jpeg",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         // Add more doctors as needed
       ],
@@ -56,7 +59,8 @@ export default function Department() {
     {
       id: "pediatrics",
       name: "Pediatrics",
-      bannerImage: "assets/img/departments/pediatrics-banner.jpg",
+      bannerImage:
+        "https://gmmhospital.in/assets/img/carousel-images/carousel-bg-1.jpg",
       description:
         "The department provides medical care to infants, children, adolescents, and young adults. We provide outpatient services as well as inpatient service which includes assessments and vaccinations.",
       doctors: [
@@ -65,7 +69,8 @@ export default function Department() {
           qualifications: "MBBS, DCH",
           role: "Pediatrician",
           opTimings: "Monday- Saturday, 11.30 AM- 1.00 PM",
-          image: "assets/img/doctors/DrSunnychenDevasia.jpg",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         // Add more doctors as needed
       ],
@@ -73,7 +78,8 @@ export default function Department() {
     {
       id: "orthopedics",
       name: "Orthopedics",
-      bannerImage: "assets/img/departments/orthopedic-banner.jpg",
+      bannerImage:
+        "https://gmmhospital.in/assets/img/carousel-images/carousel-bg-1.jpg",
       description:
         "Provide medical care for issues related to the musculoskeletal system and treating injuries to bones, joints, ligaments, or tendons. We also have a well-equipped physiotherapy unit.",
       doctors: [
@@ -82,7 +88,8 @@ export default function Department() {
           qualifications: "MBBS, MS, DNB, MRCS",
           role: "Orthopedic Surgeon",
           opTimings: "Monday, Tuesday, Thursday, 5.30 PM- 8.00 PM",
-          image: "assets/img/doctors/DrVarkeySKulangara.jpg",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         // Add more doctors as needed
       ],
@@ -90,32 +97,27 @@ export default function Department() {
     {
       id: "nephrology",
       name: "Nephrology",
-      bannerImage: "assets/img/departments/nephrology-banner.jpg",
+      bannerImage:
+        "https://gmmhospital.in/assets/img/carousel-images/carousel-bg-1.jpg",
       description:
-        "Provides OPD based medical care for diseases related to the kidney. We also have a dialysis unit providing treatment for kidney failure.",
+        "Provides OPD based medical care for diseases related to the kidney. We also have a dialysis unit providing treatment for kidney failure. ",
       doctors: [
         {
           name: "Dr Sneha Anna Joy",
           qualifications: "MBBS, MD, DM",
           role: "Consultant Nephrologist",
           opTimings: "1st & 3rd Saturday, 11.00 AM- 12.00 PM",
-          image: "assets/img/doctors/DrSnehaAnnaJoy.jpeg",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         // Add more doctors as needed
       ],
-      dialysis: {
-        services: ["Dialysis unit"],
-        timings: "Monday - Saturday, 7.00 AM – 4.00 PM",
-        technicians: [
-          "Harikrishnan. S, MSc Dialysis Therapy",
-          "Jishnu Baburaj Diploma in Dialysis Technology",
-        ],
-      },
     },
     {
       id: "emergency-medicine",
       name: "Emergency Medicine",
-      bannerImage: "assets/img/departments/emergency-medicine-banner.png",
+      bannerImage:
+        "https://gmmhospital.in/assets/img/carousel-images/carousel-bg-1.jpg",
       description:
         "We provide 24*7 emergency care to patients who need immediate care.",
       doctors: [
@@ -123,19 +125,22 @@ export default function Department() {
           name: "Dr Rohan Chacko Jacob",
           qualifications: "MBBS",
           role: "Casualty Medical Officer",
-          image: "assets/img/doctors/DrRohanChackoJacob.jpg",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         {
           name: "Dr Sara Jacob",
           qualifications: "MBBS",
           role: "Casualty Medical Officer",
-          image: "assets/img/doctors/DrSaraJacob.jpg",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         {
           name: "Dr Midhun Raj",
           qualifications: "MBBS",
           role: "General Practitioner",
-          image: "assets/img/doctors/no-image.jpg",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
         },
         // Add more doctors as needed
       ],

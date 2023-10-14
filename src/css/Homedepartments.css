@@ -1,106 +1,97 @@
-
 /*--------------------------------------------------------------
 # Departments
 --------------------------------------------------------------*/
 .departments .icon-box {
-    text-align: center;
-    border: 1px solid #d5e1ed;
-    padding: 30px 30px;
-    transition: all ease-in-out 0.3s;
-    margin-bottom: 20px;
-    height: 250px;
-  }
-  
-  .departments .icon-box img {
-    margin: 0 auto;
-    width: 60px !important;
-    height: 60px !important;
-    transition: all 0.3s ease-out 0s;
-    display: flex;
-    object-fit: contain !important;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    transform-style: preserve-3d;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-  }
-  
-  .departments .icon-box img {
-    transition: ease-in-out 0.3s;
-  }
-  
-  .departments .icon-box:hover img {
-    transform: scale(1.1);
-  }
-  
-  .departments .icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 15px;
-    /* font-size: 20px; */
-    font-size: var(--h3-font-size);
-  }
-  
-  .departments .icon-box h4 a {
-    color: #2c4964;
-  }
-  
-  .departments .icon-box p {
-    line-height: 24px;
-    /* font-size: 14px; */
-    font-size: var(--small-font-size);
-    /* font-size: var(--normal-font-size); */
-    margin-bottom: 0;
-  }
-  
-  .departments .icon-box:hover {
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-    transform: translateY(-5px);
-    /* transform: translateY(-5px);   */
-  }
-  
-  .departments .btn {
-    /* font-size: 12px !important; */
-    transition-duration: 0.3s;
-  }
-  .departments .btn:hover {
-    border: none;
-    background-color: crimson;
-    color: white;
-  }
-  .departments-more-arrow img {
-    transition: none !important;
-    transform: none !important;
-    height: 30px !important;
-    height: 30px !important;
-  }
-  .departments .more-departments {
-    /* font-size: 14px !important; */
-    padding: 12px;
-    background-color: crimson;
-    border: 1px solid crimson;
-    color: white;
-    width: 250px;
-    transition-duration: 0.3s;
-  }
-  .departments .more-departments:hover {
-    background-color: white;
-    color: crimson;
-    border: 1px solid crimson;
-  }
-  
-  .departments .more-departments {
-    /* font-size: 14px !important; */
-    padding: 12px;
-    background-color: crimson;
-    border: 1px solid crimson;
-    color: white;
-    width: 250px;
-    transition-duration: 0.3s;
-  }
-  .departments .more-departments:hover {
-    background-color: white;
-    color: crimson;
-    border: 1px solid crimson;
-  }
-  
+  text-align: center;
+  border: 1px solid #d5e1ed;
+  padding: 30px 30px;
+  transition: all ease-in-out 0.3s;
+  margin-bottom: 20px;
+  height: 250px;
+}
+
+.departments .icon-box img {
+  margin: 0 auto;
+  width: 60px !important;
+  height: 60px !important;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  object-fit: contain !important;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.departments .icon-box img {
+  transition: ease-in-out 0.3s;
+}
+
+.departments .icon-box:hover img {
+  transform: scale(1.1);
+}
+
+.departments .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.departments .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.departments .icon-box:hover {
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  transform: translateY(-5px);
+  /* transform: translateY(-5px);   */
+}
+
+.departments .btn {
+  /* font-size: 12px !important; */
+  transition-duration: 0.3s;
+}
+.departments .btn:hover {
+  border: none;
+  background-color: crimson;
+  color: white;
+}
+.departments-more-arrow img {
+  transition: none !important;
+  transform: none !important;
+  height: 30px !important;
+  height: 30px !important;
+}
+.departments .more-departments {
+  /* font-size: 14px !important; */
+  padding: 12px;
+  background-color: crimson;
+  border: 1px solid crimson;
+  color: white;
+  width: 250px;
+  transition-duration: 0.3s;
+}
+.departments .more-departments:hover {
+  background-color: white;
+  color: crimson;
+  border: 1px solid crimson;
+}
+
+.departments .more-departments {
+  /* font-size: 14px !important; */
+  padding: 12px;
+  background-color: crimson;
+  border: 1px solid crimson;
+  color: white;
+  width: 250px;
+  transition-duration: 0.3s;
+}
+.departments .more-departments:hover {
+  background-color: white;
+  color: crimson;
+  border: 1px solid crimson;
+}

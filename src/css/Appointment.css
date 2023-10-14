@@ -79,19 +79,3 @@
 .appointment .email-form textarea {
   padding: 10px 12px;
 }
-
-.appointment button[type="submit"] {
-  padding: 12px;
-  margin-top: var(--mb-2);
-  background-color: crimson;
-  color: white;
-  border: 1px solid white;
-  width: 250px;
-  transition-duration: 0.3s;
-}
-
-.appointment button[type="submit"]:hover {
-  background-color: #ffffff;
-  border: 1px solid crimson;
-  color: crimson;
-}

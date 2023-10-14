@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Bcrumbs from "../components/Bcrumbs";
 import Sectionhead from "../components/Sectionhead";
 import "../css/Appointment.css";
+import { Button } from "react-bootstrap";
 
 function Appointment() {
   const initialFormData = {
@@ -173,8 +174,10 @@ function Appointment() {
                 </select>
               </div>
             </div>
-            <div className="text-center">
-              <button type="submit">Make an Appointment</button>
+            <div className="d-flex justify-content-center align-items-center mt-3">
+              <Button className="click-btn">
+                <span>Make Appointment</span>
+              </Button>
             </div>
           </form>
         </div>

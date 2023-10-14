@@ -28,7 +28,7 @@ export default function Homecarousel({ photos }) {
             >
               <img
                 src={photo.urls.small}
-                className="d-block w-100"
+                className="img-fluid w-100"
                 alt={`Slide ${index}`}
               />
             </div>

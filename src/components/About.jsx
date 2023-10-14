@@ -2,7 +2,7 @@ import React from "react";
 import "../css/About.css";
 import Sectionhead from "./Sectionhead";
 
-export default function About({ firstPic }) {
+export default function About({ aboutBanner }) {
   return (
     <>
       <section className="about" id="about">
@@ -33,13 +33,13 @@ export default function About({ firstPic }) {
               </p>
             </div>
 
-            {firstPic && (
+            {aboutBanner && (
               <div className="col-lg-5">
                 <div className="position-relative about-img">
                   <img
-                    src={firstPic}
+                    src={aboutBanner}
                     className="d-block w-100"
-                    alt="First Unsplash image"
+                    alt="About"
                   />
                 </div>
               </div>
