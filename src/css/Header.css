@@ -610,6 +610,11 @@
   align-items: center !important;
   box-shadow: #0000002e 0px 2px 4px;
 }
+
+.dropdown-menu {
+  border-radius: 0 !important;
+}
+
 .dropdown-menu .nav-item {
   width: 100%;
 }
