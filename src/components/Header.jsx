@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import Topbar from "./Topbar";
-import '../css/Header.css'
+import "../css/Header.css";
 const Header = () => {
   return (
     <>
@@ -32,9 +32,9 @@ const Header = () => {
                 {/* End Header Logo */}
               </div>
               <div className="col-2 col-lg-5 col-xl-8 m-0 p-0 row align-items-center justify-content-xl-end">
-                  {/* Start Navbar */}
-                  <Navbar />
-                  {/* End Navbar */}
+                {/* Start Navbar */}
+                <Navbar />
+                {/* End Navbar */}
               </div>
             </div>
           </div>

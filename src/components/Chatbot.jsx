@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/Chatbot.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const Chatbot = () => {
   const [isChatbotCollapsed, setChatbotCollapsed] = useState(true);
@@ -448,7 +450,7 @@ const Chatbot = () => {
             className="Chatbot-toggle-logo"
           />
         ) : (
-          <i className="bx bxs-chevron-down"></i>
+          <FontAwesomeIcon icon={faClose} />
         )}
       </button>
       <div className="main-title">
@@ -489,7 +491,7 @@ const Chatbot = () => {
           }}
         />
         <button className="input-send" onClick={handleSendMessage}>
-          <i className="bx bxs-send fs-5"></i>
+          <FontAwesomeIcon icon={faPaperPlane} />
         </button>
       </div>
     </div>

@@ -6,8 +6,7 @@
   background: #fff;
 }
 
-.Contact .info i {
-  /* font-size: 20px; */
+/* .Contact .info i {
   font-size: var(--h3-font-size);
   color: white;
   float: left;
@@ -19,12 +18,10 @@
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-}
+} */
 
 .Contact .info h4 {
-  padding: 0 0 0 60px;
-  /* font-size: 22px; */
-  font-size: var(--h3-font-size);
+  font-size: 16px !important;
   font-weight: 600;
   margin-bottom: 5px;
   color: #2c4964;
@@ -32,7 +29,6 @@
 /* d5a0b2 */
 
 .Contact .info p {
-  padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
   color: #2c4964;
@@ -42,12 +38,18 @@
 .Contact .info .phone {
   margin-top: 40px;
 }
-
-.Contact .info .email:hover i,
-.Contact .info .address:hover i,
-.Contact .info .phone:hover i {
-  background: crimson;
-  color: #fff;
+.contact-info-icon {
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition-duration: 0.4s;
+}
+.Contact .info .email:hover .contact-info-icon,
+.Contact .info .address:hover .contact-info-icon,
+.Contact .info .phone:hover .contact-info-icon {
+  background: white;
+  color: crimson;
+  border: 1px solid crimson;
 }
 
 .Contact .php-email-form {

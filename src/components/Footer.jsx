@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -36,31 +39,46 @@ export default function Footer() {
               <ul>
                 <h4 className="text-uppercase ">Useful Links</h4>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link to="/" className="text-uppercase">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link to="/Facilities" className="text-uppercase">
                     facilities
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link to="/Appointment" className="text-uppercase">
                     Appointment
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link to="/Contact" className="text-uppercase">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link to="/Gallery" className="text-uppercase">
                     Gallery
                   </Link>
@@ -71,7 +89,10 @@ export default function Footer() {
               <ul>
                 <h4 className="text-uppercase ">Our Departments</h4>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>{" "}
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link
                     to="/Departments?tab=general-medicine"
                     className="text-uppercase"
@@ -80,7 +101,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>{" "}
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link
                     to="/Departments?tab=cardiology"
                     className="text-uppercase"
@@ -89,7 +113,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>{" "}
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link
                     to="/Departments?tab=orthopedics"
                     className="text-uppercase"
@@ -98,7 +125,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>{" "}
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link
                     to="/Departments?tab=pediatrics"
                     className="text-uppercase"
@@ -107,7 +137,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <i className="bx bx-chevrons-right"></i>{" "}
+                  <FontAwesomeIcon
+                    icon={faAnglesRight}
+                    className="footer-icons"
+                  />
                   <Link
                     to="/Departments?tab=nephrology"
                     className="text-uppercase"
@@ -119,24 +152,24 @@ export default function Footer() {
             </div>
             <div className="col-lg-3 col-md-3 mb-2 mb-lg-0 footer-newsletter d-flex flex-column align-items-lg-start ">
               <h4 className="text-uppercase mb-2">Follow us on:</h4>
-              <div className="social-links ">
+              <div className="social-links d-flex justify-content-around align-items-center ">
                 <a
                   href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL"
                   className="facebook"
                 >
-                  <i className="bx bxl-facebook"></i>
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="footer-social"
+                  />
                 </a>
                 <a
                   href="https://instagram.com/gmm_hospital?igshid=YmMyMTA2M2Y="
                   className="instagram"
                 >
-                  <i className="bx bxl-instagram"></i>
-                </a>
-                <a href="#" className="twitter">
-                  <i className="bx bxl-twitter"></i>
-                </a>
-                <a href="#" className="linkedin">
-                  <i className="bx bxl-linkedin"></i>
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="footer-social"
+                  />
                 </a>
               </div>
             </div>

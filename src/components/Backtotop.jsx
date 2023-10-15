@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import '../css/Backtotop.css'
+import "../css/Backtotop.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Backtotop = () => {
   const [isActive, setIsActive] = useState(false);
@@ -30,10 +32,9 @@ const Backtotop = () => {
       }`}
       onClick={scrollToTop}
     >
-      <i className="bx bx-chevron-up"></i>
+      <FontAwesomeIcon icon={faChevronUp} />
     </a>
   );
 };
 
 export default Backtotop;
-

@@ -50,12 +50,10 @@
   background: crimson;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 8px;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
   transition: 0.3s;
 }
 
@@ -76,4 +74,8 @@
 }
 .footer-credits .credit-azaic {
   color: crimson;
+}
+
+.footer-icons {
+  margin-right: 8px !important;
 }

@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import Bcrumbs from "../components/Bcrumbs";
 import Sectionhead from "../components/Sectionhead";
 import "../css/Contact.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faLocation,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   const initialFormData = {
@@ -45,22 +51,37 @@ export default function Contact() {
           <div className="row mt-5">
             <div className="col-lg-4">
               <div className="info">
-                <div className="address">
-                  <i className="bx bx-current-location"></i>
-                  <h4>Location:</h4>
-                  <p>Mallappally East, P O, Pathanamthitta, Kerala</p>
+                <div className="address d-flex justify-content-start align-items-center ">
+                  <FontAwesomeIcon
+                    icon={faLocation}
+                    className="contact-info-icon"
+                  />
+                  <div className="d-flex flex-column align-items-start justify-content-center ms-4">
+                    <h4>Location:</h4>
+                    <p>Mallappally East, P O, Pathanamthitta, Kerala</p>
+                  </div>
                 </div>
 
-                <div className="email">
-                  <i className="bx bx-envelope "></i>
-                  <h4>Email:</h4>
-                  <p>gmmhospital@gmail.com</p>
+                <div className="email d-flex justify-content-start align-items-center ">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="contact-info-icon"
+                  />
+                  <div className="d-flex flex-column align-items-start justify-content-center ms-4">
+                    <h4>Email:</h4>
+                    <p>gmmhospital@gmail.com</p>
+                  </div>
                 </div>
 
-                <div className="phone">
-                  <i className="bx bx-phone"></i>
-                  <h4>Call:</h4>
-                  <p> 0469-2782262, 8281161330</p>
+                <div className="phone d-flex justify-content-start align-items-center ">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    className="contact-info-icon"
+                  />
+                  <div className="d-flex flex-column align-items-start justify-content-center ms-4">
+                    <h4>Call:</h4>
+                    <p> 0469-2782262, 8281161330</p>
+                  </div>
                 </div>
               </div>
             </div>
