@@ -48,11 +48,26 @@ function Appointment() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmitAppointment = (e) => {
     e.preventDefault();
-    // Here you can handle the form submission, for example:
-    console.log(formData);
-    // Clear the form fields after submission
+
+    // Gather all values from the form fields
+    const { name, email, phone, date, department, doctor } = formData;
+
+    // Create a list of key-value pairs
+    const appointmentData = {
+      Name: name,
+      Email: email,
+      Phone: phone,
+      Date: date,
+      Department: department,
+      Doctor: doctor,
+    };
+
+    // Print the list on the console
+    console.log("Appointment Data:", appointmentData);
+
+    // Clear the form data after submission
     setFormData(initialFormData);
   };
 
@@ -67,7 +82,7 @@ function Appointment() {
         />
         <div className="container">
           <form
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmitAppointment}
             method="post"
             role="form"
             className="email-form"
@@ -175,9 +190,9 @@ function Appointment() {
               </div>
             </div>
             <div className="d-flex justify-content-center align-items-center mt-3">
-              <Button className="click-btn">
+              <button className="click-btn">
                 <span>Make Appointment</span>
-              </Button>
+              </button>
             </div>
           </form>
         </div>

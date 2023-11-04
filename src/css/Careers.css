@@ -1,7 +1,5 @@
 .careers-section {
-  -webkit-box-shadow: -1px 0px 5px 4px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: -1px 0px 5px 4px rgba(0, 0, 0, 0.16);
-  box-shadow: -1px 0px 5px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: -1px 0px 5px 4px rgba(94, 93, 93, 0.16);
 }
 
 .careers-section p {

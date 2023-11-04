@@ -8,7 +8,7 @@ export default function Homerecentnews({ recentNews }) {
       <Sectionhead
         sectionname="Recent news"
         sectiondescription="Our Latest"
-        sectiondescriptionbold="News & Blogs"
+        sectiondescriptionbold="News"
       />
       <div className="container">
         <div className="row g-3">
