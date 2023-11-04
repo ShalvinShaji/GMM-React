@@ -9,13 +9,16 @@ const careersData = [
     title: "Consultant General Medicine",
     bannerImage:
       "https://images.hdqwalls.com/wallpapers/mortal-kombat-mobile-logo-5o.jpg",
-    contact: "Please send your resume to gmmhospital@gmail.com",
+    qualifications: "mbbs",
+    contact:
+      "Please send your resume to gmmhospital@gmail.com Please send your resume to gmmhospital@gmail.com Please send your resume to gmmhospital@gmail.com Please send your resume to gmmhospital@gmail.com",
   },
   {
     id: 2,
     title: "Consultant General Medicine",
     bannerImage:
       "https://images.hdqwalls.com/wallpapers/mortal-kombat-mobile-logo-5o.jpg",
+    qualifications: "mbbs",
     contact: "Please send your resume to gmmhospital@gmail.com",
   },
   {
@@ -23,6 +26,7 @@ const careersData = [
     title: "Consultant General Medicine",
     bannerImage:
       "https://images.hdqwalls.com/wallpapers/mortal-kombat-mobile-logo-5o.jpg",
+    qualifications: "mbbs",
     contact: "Please send your resume to gmmhospital@gmail.com",
   },
   // Add more career objects as needed
@@ -55,6 +59,9 @@ export default function Careers() {
                       <h4 className="text-capitalize">{career.title}</h4>
                     </div>
 
+                    <div className="careers-contact">
+                      <p>Qualifications required : {career.qualifications}</p>
+                    </div>
                     <div className="careers-contact">
                       <p>{career.contact}</p>
                     </div>
