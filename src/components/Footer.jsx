@@ -152,7 +152,7 @@ export default function Footer() {
             </div>
             <div className="col-lg-3 col-md-3 mb-2 mb-lg-0 footer-newsletter d-flex flex-column align-items-lg-start ">
               <h4 className="text-uppercase mb-2">Follow us on:</h4>
-              <div className="social-links d-flex justify-content-around align-items-center ">
+              <div className="social-links d-flex justify-content-center-lg-center align-items-center ">
                 <a
                   href="https://www.facebook.com/georgemathen.missionhospital?mibextid=ZbWKwL"
                   className="facebook"
