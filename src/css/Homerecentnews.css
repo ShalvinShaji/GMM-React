@@ -1,73 +1,76 @@
-/*--------------------------------------------------------------
-# Recent News Posts
---------------------------------------------------------------*/
-
-.recent-posts .post-box {
-  transition: 0.3s;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
+.post-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: -1px 0px 5px 4px rgba(78, 77, 77, 0.058);
+}
+
+.post-img img {
+  border-radius: 15px 15px 0 0;
+}
+
+.post-desc {
   text-align: justify;
-  padding: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
-.recent-posts .post-box .post-img {
+.post-desc p {
   overflow: hidden;
-  position: relative;
+  max-height: 100px; /* Set a maximum height for the transition */
+  transition: 0.7s ease-in-out; /* Transition for max-height */
 }
 
-.recent-posts .post-box .post-img img {
-  transition: 0.5s;
-  height: 250px;
+.redmore-expanded .post-desc p {
+  max-height: 1000px; /* Set a large value for max-height when expanded */
+}
+
+/* Reverse transition when collapsing */
+.redmore-collapsed .post-desc p {
+  max-height: 100px;
+}
+
+.post-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post-date {
+  font-style: italic !important;
+  font-weight: 400;
+}
+
+.post-readmore {
+  background-color: crimson;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post-readmore:hover,
+.post-readmore:active {
+  background-color: #fa1845 !important;
+}
+
+.news-image img {
+  max-height: 500px !important;
   width: 100%;
+  object-fit: cover;
+  border: 2px solid #bebbbb;
 }
 
-.recent-posts .post-box .meta {
-  margin-top: 15px;
+.redmore {
+  background-color: crimson !important;
+  color: white; /* Button text color */
+  text-align: center;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 4px; /* Adjust border-radius as needed */
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px; /* Adjust the margin as needed */
 }
 
-.recent-posts .post-box .meta .post-date {
-  font-size: 13px !important;
-  font-weight: 400;
-  /* color: var(--color-primary); */
-}
-
-.recent-posts .post-box .meta .post-author {
-  /* font-size: 15px; */
-  font-weight: 400;
-  /* color: var(--color-secondary); */
-}
-
-.recent-posts .post-box .post-title {
-  /* font-size: 18px; */
-  font-size: 16px !important;
-  color: #383838;
-  font-weight: 700;
-  margin: 15px 0 0 0;
-  position: relative;
-  text-transform: capitalize !important;
-}
-
-.recent-posts .post-box p {
-  margin-top: 5px;
-  color: #383838;
-  font-size: 14px !important;
-}
-
-.recent-posts .post-box .readmore {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  line-height: 1;
-  transition: 0.3s;
-  margin-top: 15px;
-}
-
-.recent-posts .post-box .readmore i {
-  line-height: 0;
-  margin-left: 4px;
-  /* font-size: 18px; */
+.redmore:hover {
+  background-color: darkred; /* Darken the background on hover */
 }

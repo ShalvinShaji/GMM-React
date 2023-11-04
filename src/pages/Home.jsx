@@ -52,43 +52,40 @@ export default function Home() {
 
   const aboutBanner = "https://source.unsplash.com/random/800x600?medical=5";
 
-  const recentNews = [
+  const initialNewsData = [
     {
       id: 1,
-      imageSrc: "https://source.unsplash.com/random/800x600?medical=1",
-      date: "Tue, December 12",
-      title: "Dialysis unit",
-      description: "Available from Monday to Saturday",
+      title: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: "https://images.hdqwalls.com/wallpapers/hellsweeper-vr-sy.jpg",
+      shortDesc:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adipisci natus quibusdam a doloremque Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adi Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adi Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adipisci natus quibusdam a doloremque?",
+      date: "August 2023",
     },
     {
       id: 2,
-      imageSrc: "https://source.unsplash.com/random/800x600?medical=2",
-      date: "Fri, September 05",
-      title: "Home care services available",
-      description:
-        "For additional information and booking CONTACT US 0469 278 2262, 8281161330",
+      title: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      image: "https://images.hdqwalls.com/wallpapers/hellsweeper-vr-sy.jpg",
+      shortDesc:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adipisci natus quibusdam a doloremque?",
+      date: "August 2023",
     },
     {
       id: 3,
-      imageSrc: "https://source.unsplash.com/random/800x600?medical=3",
-      date: "Tue, July 27",
-      title: "MORTUARY SERVICES AVAILABLE 24*7",
-      description: "CONTACT US 0469 2682262, 8281161330",
+      title: "1 Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: "https://images.hdqwalls.com/wallpapers/hellsweeper-vr-sy.jpg",
+      shortDesc:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adipisci natus quibusdam a doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adipisci natus quibusdam a doloremque?",
+      date: "August 2023",
     },
     {
       id: 4,
-      imageSrc: "https://source.unsplash.com/random/800x600?medical=4",
-      date: "Wed, October 18",
-      title: "Emergency Medical Services",
-      description: "Call 911 for immediate assistance",
+      title: "2 Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      image: "https://images.hdqwalls.com/wallpapers/hellsweeper-vr-sy.jpg",
+      shortDesc:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fugit nisi consequatur eligendi est doloribus! Adipisci natus quibusdam a doloremque?",
+      date: "August 2023",
     },
-    {
-      id: 5,
-      imageSrc: "https://source.unsplash.com/random/800x600?medical=5",
-      date: "Sat, May 01",
-      title: "Health and Wellness Workshops",
-      description: "Join us for informative sessions on staying healthy",
-    },
+    // Add more news items as needed
   ];
 
   const HomedepartmentsData = [
@@ -165,7 +162,7 @@ export default function Home() {
       <Homecarousel photos={photos} />
       <About aboutBanner={aboutBanner} />
       <Homedepartments homedepartments={HomedepartmentsData} />
-      <Homerecentnews recentNews={recentNews} />
+      <Homerecentnews recentNews={initialNewsData} />
     </>
   );
 }
