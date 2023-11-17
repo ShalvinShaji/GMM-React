@@ -2,29 +2,33 @@
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-    padding: 20px;
-    background-color: #f1f7fd;
-    min-height: 40px;
-  }
-  
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .breadcrumbs ol li + li {
-    padding-left: 10px;
-    text-transform: capitalize !important;
-  }
-  
-  .breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #6c757d;
-    content: "/";
-  }
-  
+  padding: 20px;
+  background-color: #f1f7fd;
+  min-height: 40px;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+  text-transform: capitalize !important;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+}
+
+.breadcrumbs .bcrumb-icon {
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 3px;
+}
