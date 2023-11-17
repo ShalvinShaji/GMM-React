@@ -45,6 +45,12 @@
   .carousel-item {
     padding: 40px;
   }
+
+  .carousel-item img {
+    max-width: 100%;
+    object-fit: cover !important;
+    height: 200px !important;
+  }
 }
 
 .carousel-item img {

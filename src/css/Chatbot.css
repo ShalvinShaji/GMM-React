@@ -11,8 +11,6 @@
 .chatbot-collapsed {
   width: 48px !important;
   height: 48px !important;
-  border-radius: 24px !important;
-  margin: 16px !important;
 }
 
 .main-card {
@@ -29,8 +27,8 @@
   right: 0;
   bottom: 60px;
   position: fixed;
-  transition: all 0.5s;
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* transition-duration: 0.8s; */
+  /* box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   z-index: 999;
 }
 
@@ -40,12 +38,13 @@
   border: none;
   height: 48px;
   width: 48px;
-  padding: 14px;
-  color: crimson;
+  padding: 13px;
+  color: white;
+  background-color: transparent;
 }
 
-#chatbot_toggle i {
-  font-size: var(--h2-font-size);
+#chatbot_toggle .toggle-icon {
+  font-size: 23px !important;
 }
 
 #chatbot_toggle img {
@@ -63,7 +62,7 @@
   opacity: 0.2;
 }
 .main-title {
-  background-color: crimson;
+  background-color: #b5b2b2;
   font-size: large;
   font-weight: bold;
   display: flex;

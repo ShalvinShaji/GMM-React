@@ -77,6 +77,12 @@ section {
   font-weight: 800;
   color: #3d3c3c;
 }
+
+@media (max-width: 767px) {
+  .section-title p {
+    font-size: 1.4rem !important;
+  }
+}
 .section-title span {
   color: crimson;
 }

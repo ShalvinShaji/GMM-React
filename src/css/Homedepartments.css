@@ -19,7 +19,6 @@
   object-fit: contain !important;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);

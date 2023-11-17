@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../css/Chatbot.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClose, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronCircleDown,
+  faClose,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Chatbot = () => {
   const [isChatbotCollapsed, setChatbotCollapsed] = useState(true);
@@ -16,7 +20,6 @@ const Chatbot = () => {
     const message = messageInput.value.trim();
 
     if (message === "") {
-      alert("Please enter a message before sending.");
       return;
     } else {
       addMsg(message);
@@ -450,7 +453,7 @@ const Chatbot = () => {
             className="Chatbot-toggle-logo"
           />
         ) : (
-          <FontAwesomeIcon icon={faClose} />
+          <FontAwesomeIcon className="toggle-icon" icon={faChevronCircleDown} />
         )}
       </button>
       <div className="main-title">
