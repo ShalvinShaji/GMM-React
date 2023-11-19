@@ -7,14 +7,17 @@
   .about .section-title {
     display: none !important;
   }
+  .about img {
+    height: 250px !important;
+  }
 }
 
 .about h1 {
   font-size: var(--h2-font-size);
 }
 .about img {
-  max-width: 100%;
-  height: 260px;
+  max-width: 600px;
+  max-height: 300px;
   object-fit: cover !important;
   border-radius: 5px;
 }
