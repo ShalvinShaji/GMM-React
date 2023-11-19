@@ -15,10 +15,11 @@ export default function Revgeorgemathen() {
         />
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 profile-img">
+            <div className="col-lg-4 profile-img mb-md-0 mb-3 d-md-block">
               <img
-                src="./assets/img/george-mathen/GeorgeMathan.jpg"
+                src="https://heeranew.netlify.app/assets/img/george-mathen/GeorgeMathan.jpg"
                 alt="Revgeorgemathen"
+                className="img-fluid rounded"
               />
             </div>
             <div className="col-lg-8 GeorgeMathan-history">

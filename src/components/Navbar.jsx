@@ -44,7 +44,6 @@ const Navbar = () => {
           <li className="nav-item">
             <a
               className="nav-link "
-              href="#"
               id="navbarDropdown"
               role="button"
               aria-expanded="false"
@@ -61,6 +60,7 @@ const Navbar = () => {
                   Rev. George Mathen
                 </Link>
               </li>
+              <li className="nav-item divider"></li>
               <li className="nav-item">
                 <Link
                   to="/Vision-Mission"
@@ -70,6 +70,7 @@ const Navbar = () => {
                   Vision & Mission
                 </Link>
               </li>
+              <li className="nav-item divider"></li>
               <li className="nav-item">
                 <Link
                   to="/Governing-Board"

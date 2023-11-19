@@ -1,3 +1,21 @@
-.GeorgeMathan-history{
-    text-align: justify !important;
+.GeorgeMathan-history {
+  text-align: justify !important;
+}
+
+@media (max-width: 767px) {
+  .Revgeorgemathen img {
+    height: 300px;
+    width: 260px;
+  }
+}
+
+.Revgeorgemathen .profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Revgeorgemathen img {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 10px;
 }

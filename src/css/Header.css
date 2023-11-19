@@ -628,6 +628,10 @@
   color: white !important;
 }
 
+.divider {
+  border-bottom: 1px solid #ccc;
+}
+
 /*======================================
        End Header CSS
     ========================================*/

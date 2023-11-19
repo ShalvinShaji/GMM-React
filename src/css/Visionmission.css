@@ -8,8 +8,9 @@
   font-weight: 600;
 }
 
-.VisionmissionImage {
-  object-fit: cover !important;
-  height: 200px !important;
-  width: 450px !important;
+@media (min-width: 767px) {
+  .VisionmissionImage {
+    height: 300px;
+    width: 500px;
+  }
 }
