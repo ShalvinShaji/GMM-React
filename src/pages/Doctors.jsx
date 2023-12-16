@@ -7,54 +7,75 @@ export default function Doctors() {
   function doctorsData() {
     var doctorsList = [
       {
-        id: 1,
-        name: "Dr K. A Chacko",
-        role: "Chief Medical Officer",
-        qualifications: "MBBS, FCAMS",
+        departmentId: "general-medicine",
+        name: "Dr N Damodaran",
+        qualifications: "MBBS, MD",
+        role: "Chief Physician",
+        opTimings: "Monday- Saturday, 6.00 PM- 9.00 PM",
         image:
-          "https://yt3.googleusercontent.com/ytc/APkrFKYQtHv2GYhbAQkrTRknWk6YVrDLLZk1YovsUcT0Aw=s900-c-k-c0x00ffffff-no-rj",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
       {
-        id: 2,
-        name: "Dr K. A Chacko",
-        role: "Chief Medical Officer",
-        qualifications: "MBBS, FCAMS",
+        departmentId: "cardiology",
+        name: "Dr Philipose John",
+        qualifications: "MBBS, MD, DM",
+        role: "Cardiologist",
+        opTimings: "Saturday, 12.00 PM – 1.00 PM",
         image:
-          "https://yt3.googleusercontent.com/ytc/APkrFKYQtHv2GYhbAQkrTRknWk6YVrDLLZk1YovsUcT0Aw=s900-c-k-c0x00ffffff-no-rj",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
       {
-        id: 3,
-        name: "Dr K. A Chacko",
-        role: "Chief Medical Officer",
-        qualifications: "MBBS, FCAMS",
+        departmentId: "pediatrics",
+        name: "Dr Sunnychen Devasia",
+        qualifications: "MBBS, DCH",
+        role: "Pediatrician",
+        opTimings: "Monday- Saturday, 11.30 AM- 1.00 PM",
         image:
-          "https://yt3.googleusercontent.com/ytc/APkrFKYQtHv2GYhbAQkrTRknWk6YVrDLLZk1YovsUcT0Aw=s900-c-k-c0x00ffffff-no-rj",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
       {
-        id: 4,
-        name: "Dr K. A Chacko",
-        role: "Chief Medical Officer",
-        qualifications: "MBBS, FCAMS",
+        departmentId: "orthopedics",
+        name: "Dr Varkey S Kulangara",
+        qualifications: "MBBS, MS, DNB, MRCS",
+        role: "Orthopedic Surgeon",
+        opTimings: "Monday, Tuesday, Thursday, 5.30 PM- 8.00 PM",
         image:
-          "https://yt3.googleusercontent.com/ytc/APkrFKYQtHv2GYhbAQkrTRknWk6YVrDLLZk1YovsUcT0Aw=s900-c-k-c0x00ffffff-no-rj",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
       {
-        id: 5,
-        name: "Dr K. A Chacko",
-        role: "Chief Medical Officer",
-        qualifications: "MBBS, FCAMS",
+        departmentId: "nephrology",
+        name: "Dr Sneha Anna Joy",
+        qualifications: "MBBS, MD, DM",
+        role: "Consultant Nephrologist",
+        opTimings: "1st & 3rd Saturday, 11.00 AM- 12.00 PM",
         image:
-          "https://yt3.googleusercontent.com/ytc/APkrFKYQtHv2GYhbAQkrTRknWk6YVrDLLZk1YovsUcT0Aw=s900-c-k-c0x00ffffff-no-rj",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
       {
-        id: 6,
-        name: "Dr K. A Chacko",
-        role: "Chief Medical Officer",
-        qualifications: "MBBS, FCAMS",
+        departmentId: "emergency-medicine",
+        name: "Dr Rohan Chacko Jacob",
+        qualifications: "MBBS",
+        role: "Casualty Medical Officer",
         image:
-          "https://yt3.googleusercontent.com/ytc/APkrFKYQtHv2GYhbAQkrTRknWk6YVrDLLZk1YovsUcT0Aw=s900-c-k-c0x00ffffff-no-rj",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
+        opTiming: "mon-fri 9am - 5pm",
       },
-      // Add more doctor objects as needed
+      {
+        departmentId: "emergency-medicine",
+        name: "Dr Sara Jacob",
+        qualifications: "MBBS",
+        role: "Casualty Medical Officer",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
+      },
+      {
+        departmentId: "emergency-medicine",
+        name: "Dr Midhun Raj",
+        qualifications: "MBBS",
+        role: "General Practitioner",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
+      },
     ];
     return (
       <div className="row">
