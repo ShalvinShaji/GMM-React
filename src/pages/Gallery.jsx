@@ -42,10 +42,8 @@ export default function Gallery() {
           "https://images.hdqwalls.com/wallpapers/age-of-wonders-4-2023-50.jpg",
           "https://images.hdqwalls.com/wallpapers/age-of-wonders-4-2023-50.jpg",
           "https://images.hdqwalls.com/wallpapers/age-of-wonders-4-2023-50.jpg",
-          // Add more images for this group
         ],
       },
-      // Add more image groups as needed
     ];
     return (
       <div className="row g-5">
