@@ -148,6 +148,7 @@ export default function Department() {
 
       if (selectedDepartment) {
         setActiveTab(selectedDepartment);
+        filterDoctors(selectedDepartment);
       } else {
         filterDoctors("general-medicine");
       }
