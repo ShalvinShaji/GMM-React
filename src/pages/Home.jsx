@@ -151,24 +151,6 @@ export default function Home() {
     },
   ];
 
-  // useEffect(() => {
-  //   if (photos.length === 0) {
-  //     const searchQuery = "hospital";
-  //     getPhotosByQuery(searchQuery)
-  //       .then((data) => {
-  //         console.log("Fetched data:", data);
-  //         setPhotos(data.results.slice(6, 15));
-  //         setFirstPic(
-  //           data.results.length > 0 ? data.results[0].urls.small : null
-  //         );
-  //         setFirstSixPics(data.results.slice(0, 6));
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error:", error);
-  //       });
-  //   }
-  // }, [photos]);
-
   return (
     <>
       <Homecarousel photos={photos} />
