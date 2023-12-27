@@ -50,7 +50,19 @@ export default function Home() {
     },
   ];
 
-  const aboutBanner = "https://source.unsplash.com/random/800x600?medical=5";
+  const aboutData = {
+    aboutBanner: "https://source.unsplash.com/random/800x600?medical=5",
+    aboutHead: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    aboutDesc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                vitae odit voluptas architecto, maiores beatae doloremque nisi.
+                Non maiores odio unde fugit quae tenetur minus ad, molestias
+                ipsum. Perspiciatis eos nobis ab porro impedit iusto assumenda
+                veritatis, quaerat, laboriosam dignissimos maiores voluptates
+                repellendus nam magnam libero obcaecati sint non dolore.
+                Molestias voluptatibus consequatur modi commodi magni neque sint
+                ab repudiandae ullam. Enim sapiente recusandae perferendis
+                expedita quos neque alias voluptate autem provident.`,
+  };
 
   const initialNewsData = [
     {
@@ -160,7 +172,7 @@ export default function Home() {
   return (
     <>
       <Homecarousel photos={photos} />
-      <About aboutBanner={aboutBanner} />
+      <About aboutData={aboutData} />
       <Homedepartments homedepartments={HomedepartmentsData} />
       <Homerecentnews recentNews={initialNewsData} />
     </>
