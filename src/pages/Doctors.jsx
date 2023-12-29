@@ -11,7 +11,7 @@ export default function Doctors() {
         name: "Dr N Damodaran",
         qualifications: "MBBS, MD",
         role: "Chief Physician",
-        opTimings: "Monday- Saturday, 6.00 PM- 9.00 PM",
+        optime: "Monday- Saturday, 6.00 PM- 9.00 PM",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
@@ -20,7 +20,7 @@ export default function Doctors() {
         name: "Dr Philipose John",
         qualifications: "MBBS, MD, DM",
         role: "Cardiologist",
-        opTimings: "Saturday, 12.00 PM – 1.00 PM",
+        optime: "Saturday, 12.00 PM – 1.00 PM",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
@@ -29,7 +29,7 @@ export default function Doctors() {
         name: "Dr Sunnychen Devasia",
         qualifications: "MBBS, DCH",
         role: "Pediatrician",
-        opTimings: "Monday- Saturday, 11.30 AM- 1.00 PM",
+        optime: "Monday- Saturday, 11.30 AM- 1.00 PM",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
@@ -38,7 +38,7 @@ export default function Doctors() {
         name: "Dr Varkey S Kulangara",
         qualifications: "MBBS, MS, DNB, MRCS",
         role: "Orthopedic Surgeon",
-        opTimings: "Monday, Tuesday, Thursday, 5.30 PM- 8.00 PM",
+        optime: "Monday, Tuesday, Thursday, 5.30 PM- 8.00 PM",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
@@ -47,7 +47,7 @@ export default function Doctors() {
         name: "Dr Sneha Anna Joy",
         qualifications: "MBBS, MD, DM",
         role: "Consultant Nephrologist",
-        opTimings: "1st & 3rd Saturday, 11.00 AM- 12.00 PM",
+        optime: "1st & 3rd Saturday, 11.00 AM- 12.00 PM",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
@@ -65,6 +65,7 @@ export default function Doctors() {
         name: "Dr Sara Jacob",
         qualifications: "MBBS",
         role: "Casualty Medical Officer",
+        optime: "1st & 3rd Saturday, 11.00 AM- 12.00 PM",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
@@ -73,6 +74,7 @@ export default function Doctors() {
         name: "Dr Midhun Raj",
         qualifications: "MBBS",
         role: "General Practitioner",
+        optime: "1st & 3rd Saturday, 11.00 AM- 12.00 PM",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgFoOhqNVXZCBY2xVkGVNBPZsFZigXvho7A&usqp=CAU",
       },
